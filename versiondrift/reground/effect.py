@@ -10,14 +10,17 @@ def capture(url_before, url_after, els_before, els_after) -> dict:
     nb, na = _names(els_before), _names(els_after)
     return {"url_changed": pb != pa, "path": pa, "appeared": sorted(na - nb)[:10], "disappeared": sorted(nb - na)[:10]}
 
-def _seg_overlap(a, b):
-    sa, sb = set(filter(None, a.split("/"))), set(filter(None, b.split("/")))
-    return len(sa & sb) / len(sa | sb) if sa | sb else 1.0
+def _same_destination(a, b) -> bool:
+    """Shared prefixes (owner/repo) must not dominate: the final path segment decides, allowing renames via synonyms."""
+    la, lb = [s for s in a.split("/") if s], [s for s in b.split("/") if s]
+    if not la or not lb: return la == lb
+    if la[-1] == lb[-1]: return True
+    return name_sim(la[-1].replace("-", " "), lb[-1].replace("-", " ")) >= 0.7 and la[:-1] == lb[:-1]
 
 def match(stored: dict, observed: dict):
     """True / False / None (None = stored effect carries no checkable signal)."""
     if stored["url_changed"]:
-        return observed["url_changed"] and _seg_overlap(stored["path"], observed["path"]) >= 0.5
+        return observed["url_changed"] and _same_destination(stored["path"], observed["path"])
     if stored["appeared"]:
         hits = sum(1 for s in stored["appeared"] if any(name_sim(s, o) >= 0.7 for o in observed["appeared"]))
         return hits / len(stored["appeared"]) >= 0.4

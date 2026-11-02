@@ -1,0 +1,108 @@
+selector           1.17.4->1.17.4 star_repo          PASS 
+selector           1.17.4->1.17.4 repo_description   FAIL 
+selector           1.17.4->1.17.4 create_issue       PASS 
+selector           1.17.4->1.17.4 create_label       PASS 
+selector           1.17.4->1.17.4 create_repo        FAIL selector_not_found
+selector           1.17.4->1.17.4 add_collaborator   PASS 
+selector           1.17.4->1.17.4 change_full_name   FAIL selector_not_found
+selector           1.17.4->1.17.4 create_branch      FAIL selector_not_found
+selector           1.17.4->1.17.4 delete_repo        FAIL selector_not_found
+selector           1.17.4->1.22.3 star_repo          PASS 
+selector           1.17.4->1.22.3 repo_description   FAIL 
+selector           1.17.4->1.22.3 create_issue       PASS 
+selector           1.17.4->1.22.3 create_label       FAIL selector_not_found
+selector           1.17.4->1.22.3 create_repo        FAIL selector_not_found
+selector           1.17.4->1.22.3 add_collaborator   PASS 
+selector           1.17.4->1.22.3 change_full_name   FAIL selector_not_found
+selector           1.17.4->1.22.3 create_branch      FAIL selector_not_found
+selector           1.17.4->1.22.3 delete_repo        FAIL selector_not_found
+similo             1.17.4->1.17.4 star_repo          PASS 
+similo             1.17.4->1.17.4 repo_description   PASS 
+similo             1.17.4->1.17.4 create_issue       PASS 
+similo             1.17.4->1.17.4 create_label       PASS 
+similo             1.17.4->1.17.4 create_repo        PASS 
+similo             1.17.4->1.17.4 add_collaborator   PASS 
+similo             1.17.4->1.17.4 change_full_name   PASS 
+similo             1.17.4->1.17.4 create_branch      PASS 
+similo             1.17.4->1.17.4 delete_repo        PASS 
+similo             1.17.4->1.22.3 star_repo          PASS 
+similo             1.17.4->1.22.3 repo_description   PASS 
+similo             1.17.4->1.22.3 create_issue       PASS 
+similo             1.17.4->1.22.3 create_label       FAIL 
+similo             1.17.4->1.22.3 create_repo        PASS 
+similo             1.17.4->1.22.3 add_collaborator   PASS 
+similo             1.17.4->1.22.3 change_full_name   PASS 
+similo             1.17.4->1.22.3 create_branch      PASS 
+similo             1.17.4->1.22.3 delete_repo        PASS 
+reground           1.17.4->1.17.4 star_repo          PASS 
+reground           1.17.4->1.17.4 repo_description   PASS 
+reground           1.17.4->1.17.4 create_issue       PASS 
+reground           1.17.4->1.17.4 create_label       PASS 
+reground           1.17.4->1.17.4 create_repo        PASS 
+reground           1.17.4->1.17.4 add_collaborator   PASS 
+reground           1.17.4->1.17.4 change_full_name   PASS 
+reground           1.17.4->1.17.4 create_branch      PASS 
+reground           1.17.4->1.17.4 delete_repo        PASS 
+reground           1.17.4->1.22.3 star_repo          PASS 
+reground           1.17.4->1.22.3 repo_description   PASS 
+reground           1.17.4->1.22.3 create_issue       PASS 
+reground           1.17.4->1.22.3 create_label       PASS 
+reground           1.17.4->1.22.3 create_repo        PASS 
+reground           1.17.4->1.22.3 add_collaborator   PASS 
+reground           1.17.4->1.22.3 change_full_name   PASS 
+reground           1.17.4->1.22.3 create_branch      FAIL no_candidate
+reground           1.17.4->1.22.3 delete_repo        FAIL needs_confirmation
+reground_noverify  1.17.4->1.17.4 star_repo          PASS 
+reground_noverify  1.17.4->1.17.4 repo_description   PASS 
+reground_noverify  1.17.4->1.17.4 create_issue       PASS 
+reground_noverify  1.17.4->1.17.4 create_label       PASS 
+reground_noverify  1.17.4->1.17.4 create_repo        PASS 
+reground_noverify  1.17.4->1.17.4 add_collaborator   PASS 
+reground_noverify  1.17.4->1.17.4 change_full_name   PASS 
+reground_noverify  1.17.4->1.17.4 create_branch      PASS 
+reground_noverify  1.17.4->1.17.4 delete_repo        PASS 
+reground_noverify  1.17.4->1.22.3 star_repo          PASS 
+reground_noverify  1.17.4->1.22.3 repo_description   PASS 
+reground_noverify  1.17.4->1.22.3 create_issue       PASS 
+reground_noverify  1.17.4->1.22.3 create_label       PASS 
+reground_noverify  1.17.4->1.22.3 create_repo        PASS 
+reground_noverify  1.17.4->1.22.3 add_collaborator   PASS 
+reground_noverify  1.17.4->1.22.3 change_full_name   PASS 
+reground_noverify  1.17.4->1.22.3 create_branch      FAIL no_candidate
+reground_noverify  1.17.4->1.22.3 delete_repo        FAIL needs_confirmation
+reground_noguard   1.17.4->1.17.4 star_repo          PASS 
+reground_noguard   1.17.4->1.17.4 repo_description   PASS 
+reground_noguard   1.17.4->1.17.4 create_issue       PASS 
+reground_noguard   1.17.4->1.17.4 create_label       PASS 
+reground_noguard   1.17.4->1.17.4 create_repo        PASS 
+reground_noguard   1.17.4->1.17.4 add_collaborator   PASS 
+reground_noguard   1.17.4->1.17.4 change_full_name   PASS 
+reground_noguard   1.17.4->1.17.4 create_branch      PASS 
+reground_noguard   1.17.4->1.17.4 delete_repo        PASS 
+reground_noguard   1.17.4->1.22.3 star_repo          PASS 
+reground_noguard   1.17.4->1.22.3 repo_description   PASS 
+reground_noguard   1.17.4->1.22.3 create_issue       PASS 
+reground_noguard   1.17.4->1.22.3 create_label       PASS 
+reground_noguard   1.17.4->1.22.3 create_repo        PASS 
+reground_noguard   1.17.4->1.22.3 add_collaborator   PASS 
+reground_noguard   1.17.4->1.22.3 change_full_name   PASS 
+reground_noguard   1.17.4->1.22.3 create_branch      FAIL no_candidate
+reground_noguard   1.17.4->1.22.3 delete_repo        PASS 
+reground_noctx     1.17.4->1.17.4 star_repo          PASS 
+reground_noctx     1.17.4->1.17.4 repo_description   PASS 
+reground_noctx     1.17.4->1.17.4 create_issue       PASS 
+reground_noctx     1.17.4->1.17.4 create_label       PASS 
+reground_noctx     1.17.4->1.17.4 create_repo        PASS 
+reground_noctx     1.17.4->1.17.4 add_collaborator   PASS 
+reground_noctx     1.17.4->1.17.4 change_full_name   PASS 
+reground_noctx     1.17.4->1.17.4 create_branch      PASS 
+reground_noctx     1.17.4->1.17.4 delete_repo        PASS 
+reground_noctx     1.17.4->1.22.3 star_repo          PASS 
+reground_noctx     1.17.4->1.22.3 repo_description   PASS 
+reground_noctx     1.17.4->1.22.3 create_issue       PASS 
+reground_noctx     1.17.4->1.22.3 create_label       FAIL effect_mismatch
+reground_noctx     1.17.4->1.22.3 create_repo        PASS 
+reground_noctx     1.17.4->1.22.3 add_collaborator   FAIL effect_mismatch
+reground_noctx     1.17.4->1.22.3 change_full_name   PASS 
+reground_noctx     1.17.4->1.22.3 create_branch      FAIL effect_mismatch
+reground_noctx     1.17.4->1.22.3 delete_repo        PASS 
