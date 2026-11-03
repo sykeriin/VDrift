@@ -5,3 +5,7 @@ requires-python = ">=3.11"
 dependencies = ["playwright", "pyyaml", "pydantic>=2", "requests", "pytest"]
 [tool.setuptools.packages.find]
 include = ["versiondrift*"]
+
+[tool.pytest.ini_options]
+markers = ["integration: needs running apps (Gitea binaries / Docker); run with -m integration"]
+addopts = "-m 'not integration'"

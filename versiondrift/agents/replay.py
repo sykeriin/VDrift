@@ -14,18 +14,25 @@ class Outcome:
     info: dict = field(default_factory=dict)
 
 def _do(drv, step, x, y):
-    (drv.click(x, y) if step["action"] == "click" else drv.type_at(x, y, step["value"]))
+    if step["action"] == "key": drv.press(step["value"])
+    elif step["action"] == "click": drv.click(x, y)
+    else: drv.type_at(x, y, step["value"])
+
+def _key(drv, step):
+    drv.press(step["value"]); return Outcome(True)
 
 class CoordReplay:
     """RPA floor: replay recorded pixel coordinates."""
     name = "coord_replay"
     def step(self, drv, step):
+        if step["action"] == "key": return _key(drv, step)
         _do(drv, step, step["x"], step["y"]); return Outcome(True, step["x"], step["y"])
 
 class SelectorReplay:
     """Classic test-automation floor: CSS selector from id/href/name, else role+name. Fails hard when nothing matches."""
     name = "selector_replay"
     def step(self, drv, step):
+        if step["action"] == "key": return _key(drv, step)
         s = step["selector"]; p = drv.page
         loc = None
         if s["css"]:
@@ -78,6 +85,7 @@ class SimiloReplay:
     """Similo (Nass et al.) style locator: always re-locate the best-matching element, act without verification."""
     name = "similo_replay"
     def step(self, drv, step):
+        if step["action"] == "key": return _key(drv, step)
         els = drv.snapshot()
         if not els: return Outcome(False, halted="empty_page")
         sc = sorted(((similo_score(step["anchor"], e), e) for e in els), key=lambda t: -t[0])

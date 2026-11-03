@@ -1,23 +1,26 @@
-import sys, os, traceback
-from ..envs.gitea import GiteaEnv
+"""Record reference trajectories (also the solvability check). Usage: demo_cli --app gitea 1.17.4,1.22.3 [task,task]"""
+import sys, os
+from .. import apps
 from ..drivers.playwright_driver import Driver
-from ..tasks_gitea import TASKS, BY_ID
 from . import trajectory as tj
 
-def main(versions, ids):
-    drv = Driver()
+def main(app, versions, ids, slot=0):
+    Env, TASKS = apps.get(app); by = {t.id: t for t in TASKS}
+    drv = Driver(); fails = 0
     for v in versions:
-        env = GiteaEnv(v)
+        env = Env(v, slot=slot)
         if not env.snapshot.exists(): env.init()
-        for t in (BY_ID[i] for i in ids) if ids else TASKS:
+        for t in ([by[i] for i in ids] if ids else TASKS):
             try:
-                traj = tj.demonstrate(env, drv, t, v, shots_dir=os.environ.get('VD_SHOTS'))
-                tj.save(traj)
-                print(f"{v:7} {t.id:18} check={'PASS' if traj['check_passed'] else 'FAIL'} steps={len(traj['steps'])}")
+                traj = tj.demonstrate(env, drv, t, v, shots_dir=os.environ.get("VD_SHOTS"))
+                tj.save(traj, app); fails += not traj["check_passed"]
+                print(f"{v:8} {t.id:20} check={'PASS' if traj['check_passed'] else 'FAIL'} steps={len(traj['steps'])}", flush=True)
             except Exception as e:
-                print(f"{v:7} {t.id:18} ERROR {type(e).__name__}: {str(e)[:160]}")
+                fails += 1; print(f"{v:8} {t.id:20} ERROR {type(e).__name__}: {str(e)[:160]}", flush=True)
         env.stop()
-    drv.close()
+    drv.close(); return fails
 
 if __name__ == "__main__":
-    main(sys.argv[1].split(","), sys.argv[2].split(",") if len(sys.argv) > 2 else None)
+    a = sys.argv[1:]; app = "gitea"
+    if a and a[0] == "--app": app = a[1]; a = a[2:]
+    sys.exit(1 if main(app, a[0].split(","), a[1].split(",") if len(a) > 1 else None) else 0)

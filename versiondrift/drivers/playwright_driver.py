@@ -64,6 +64,7 @@ class Driver:
         return self.page
 
     def login(self, env):
+        if hasattr(env, "login"): return env.login(self)   # app-specific login (e.g. Nextcloud)
         p = self.page
         p.goto(env.url + "/user/login")
         p.fill("#user_name", env.auth[0]); p.fill("#password", env.auth[1])

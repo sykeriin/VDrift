@@ -30,6 +30,12 @@ def demonstrate(env, drv, task, version, shots_dir=None):
     drv.new_session(task.viewport); drv.login(env); drv.goto(env.url + task.start)
     steps = []
     for i, st in enumerate(task.steps):
+        if st.action == "key":   # keyboard press on the focused element: no pixel target, no anchor
+            els = drv.snapshot(); url0 = drv.url; drv.press(st.value)
+            steps.append({"idx": i, "intent": st.intent, "action": "key", "value": st.value, "x": None, "y": None,
+                          "irreversible": st.irreversible, "anchor": None, "selector": None,
+                          "effect": fx.capture(url0, drv.url, els, drv.snapshot())})
+            continue
         tgt = st.by_version.get(version, st.target)
         loc = resolve(drv.page, tgt)
         bb = loc.bounding_box()

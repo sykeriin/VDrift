@@ -1,30 +1,10 @@
 """Gitea tasks. Every task is solvable on both versions; checkers read server state via the REST API only.
 A step target is {sel: CSS, text: exact visible text (optional), nth: int} or {label: str}; by_version overrides per release."""
 from __future__ import annotations
-from dataclasses import dataclass, field
 
-def T(sel, text=None, nth=0): return {"sel": sel, "text": text, "nth": nth}
+from .taskdef import T, Step, Task
+
 ACT = "a,button,.item,summary"
-
-@dataclass
-class Step:
-    intent: str
-    action: str            # click | type
-    target: dict
-    value: str | None = None
-    by_version: dict = field(default_factory=dict)
-    irreversible: bool = False
-
-@dataclass
-class Task:
-    id: str
-    instruction: str
-    start: str
-    steps: list
-    check: callable
-    setup: callable = lambda env: env.seed_repo("demo")
-    viewport: tuple = (1280, 1200)   # tall where pages exceed the screen: v1 has no scroll actions (documented limitation)
-    change_type: dict = field(default_factory=dict)   # {(vA, vB): label}; filled after labelling
 
 def _desc(env): return env.api("GET", "/repos/vdadmin/demo").json().get("description") == "versiondrift description"
 def _issue(env): return any(i["title"] == "Broken login" for i in env.api("GET", "/repos/vdadmin/demo/issues?state=all").json())
@@ -36,6 +16,8 @@ def _branch(env): return env.api("GET", "/repos/vdadmin/demo/branches/release-1"
 def _star(env): return env.api("GET", "/user/starred/vdadmin/demo").status_code == 204
 def _deleted(env): return env.api("GET", "/repos/vdadmin/demo").status_code == 404
 def _seed_alice(env): env.seed_repo("demo"); env.seed_user("alice")
+
+def _seed_demo(env): env.seed_repo("demo")
 
 TASKS = [
     Task("star_repo", "Star the repository vdadmin/demo.", "/vdadmin/demo",
@@ -80,3 +62,8 @@ TASKS = [
           Step("confirm delete", "click", T(".modal button, .modal .button", "Delete Repository"), irreversible=True)], _deleted, viewport=(1280, 4200)),
 ]
 BY_ID = {t.id: t for t in TASKS}
+
+# Tasks that do not name a setup get the standard seed (one repo, vdadmin/demo).
+_NOOP = Task.__dataclass_fields__["setup"].default
+for _t in TASKS:
+    if _t.setup is _NOOP: _t.setup = _seed_demo

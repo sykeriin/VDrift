@@ -15,8 +15,8 @@ def run_one(env, drv, task, version, agent, traj, gt=None, max_steps=None):
         try: out = agent.step(drv, st)
         except Exception as e: rows.append({"idx": st["idx"], "error": f"{type(e).__name__}: {str(e)[:100]}"}); halted = "exception"; break
         row = {"idx": st["idx"], "ok": out.ok, "halted": out.halted, **out.info}
-        if gt and out.x is not None: row["hit"] = point_in(gt["steps"][st["idx"]]["anchor"]["bbox"], out.x, out.y)
-        if gt:   # ground truth staleness: recorded coordinate no longer lands on the target element
+        if gt and out.x is not None and gt["steps"][st["idx"]]["anchor"]: row["hit"] = point_in(gt["steps"][st["idx"]]["anchor"]["bbox"], out.x, out.y)
+        if gt and gt["steps"][st["idx"]]["anchor"] and st["x"] is not None:   # ground truth staleness: recorded coordinate no longer lands on the target element
             row["truly_stale"] = not point_in(gt["steps"][st["idx"]]["anchor"]["bbox"], st["x"], st["y"])
         rows.append(row)
         if not out.ok: halted = out.halted; break

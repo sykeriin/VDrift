@@ -11,14 +11,15 @@ DESTRUCTIVE = re.compile(r"\b(delete|remove|archive|revoke|transfer|reset|drop|w
 class ReGround:
     name = "reground"
     def __init__(self, tau=0.60, tau_cand=0.45, tau_hi=0.85, k=3, use_ctx=True, use_pos=True,
-                 verify_effects=True, guard=True, name=None):
+                 verify_effects=True, guard=True, containment=False, name=None):
         self.tau, self.tau_cand, self.tau_hi, self.k = tau, tau_cand, tau_hi, k
-        self.use_ctx, self.use_pos, self.verify, self.guard = use_ctx, use_pos, verify_effects, guard
+        self.use_ctx, self.use_pos, self.verify, self.guard, self.cont = use_ctx, use_pos, verify_effects, guard, containment
         if name: self.name = name
 
-    def _score(self, anchor, el): return sim.score(anchor, el, use_pos=self.use_pos, use_ctx=self.use_ctx)[0]
+    def _score(self, anchor, el): return sim.score(anchor, el, use_pos=self.use_pos, use_ctx=self.use_ctx, containment=self.cont)[0]
 
     def step(self, drv, step) -> Outcome:
+        if step["action"] == "key": drv.press(step["value"]); return Outcome(True, info={"tier": "key"})
         a = step["anchor"]; els = drv.snapshot(); url0 = drv.url
         info = {"tier": None, "tried": 0}
         # 1. staleness: does the element under the recorded coordinate still match the anchor?
@@ -39,7 +40,7 @@ class ReGround:
         irreversible = step.get("irreversible") or bool(DESTRUCTIVE.search(a["name"] or ""))
         for score, el in cands:
             info["tried"] += 1; info["score"] = round(score, 3)
-            if self.guard and irreversible and (score < self.tau_hi or sim.name_sim(a["name"], el["name"]) < 0.8):
+            if self.guard and irreversible and (score < self.tau_hi or sim.name_sim(a["name"], el["name"], self.cont) < 0.8):
                 return Outcome(False, halted="needs_confirmation", info=info)
             x, y = el["center"]; before = els
             _do(drv, step, x, y)

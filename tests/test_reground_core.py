@@ -41,3 +41,10 @@ def test_destructive_verbs():
     for w in ("Delete Repository", "Remove user", "Archive this repository", "Transfer ownership"):
         assert DESTRUCTIVE.search(w)
     assert not DESTRUCTIVE.search("Update Settings")
+
+def test_containment_is_opt_in_and_capped():
+    assert sim.name_sim("Branch: main", "main") < 0.85                      # baseline behaviour unchanged
+    assert sim.name_sim("Branch: main", "main", containment=True) == 0.85
+    assert sim.name_sim("main", "main", containment=True) == 1.0
+    assert sim.name_sim("Delete", "Archive repository", containment=True) < 0.3   # unrelated verbs still get nothing
+    assert sim.name_sim("Delete repository", "Archive repository", containment=True) < 0.85

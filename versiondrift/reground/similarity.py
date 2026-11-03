@@ -15,13 +15,18 @@ WEIGHTS = dict(role=0.10, name=0.40, ancestors=0.15, neighbours=0.15, region=0.0
 def toks(s: str) -> list[str]:
     return [_CANON.get(t, t) for t in re.findall(r"[a-z0-9]+", (s or "").lower())]
 
-def name_sim(a: str, b: str) -> float:
+def name_sim(a: str, b: str, containment: bool = False) -> float:
+    """containment=True also credits a label that merely gains/loses a qualifier ("Branch: main" -> "main"),
+    capped at 0.85 so it can never reach an exact match; both sides must keep >= 1 token and the shared part must be the SHORTER side
+    entirely (so "Delete" vs "Archive repository" gets nothing)."""
     ta, tb = toks(a), toks(b)
     if not ta or not tb: return 0.0
     sa, sb = set(ta), set(tb)
     jac = len(sa & sb) / len(sa | sb)
     ratio = SequenceMatcher(None, " ".join(ta), " ".join(tb)).ratio()
-    return max(jac, ratio * 0.9)
+    best = max(jac, ratio * 0.9)
+    if containment and (sa <= sb or sb <= sa): best = max(best, 0.85)
+    return best
 
 def jaccard(a, b) -> float:
     a, b = set(a), set(b)
@@ -41,9 +46,9 @@ def region(bbox, vw=1280, vh=1200):
 def anc_tokens(anc): return [t for a in anc for t in a.split("|") if t]
 def neigh_tokens(n): return [t for x in n for t in toks(x)]
 
-def score(anchor: dict, el: dict, use_pos=True, use_ctx=True) -> tuple[float, dict]:
+def score(anchor: dict, el: dict, use_pos=True, use_ctx=True, containment=False) -> tuple[float, dict]:
     """anchor/el are snapshot-element-shaped dicts. Returns (score in [0,1], per-signal breakdown)."""
-    f = {"role": role_sim(anchor["role"], el["role"]), "name": name_sim(anchor["name"], el["name"])}
+    f = {"role": role_sim(anchor["role"], el["role"]), "name": name_sim(anchor["name"], el["name"], containment)}
     if use_ctx:
         f["ancestors"] = jaccard(anc_tokens(anchor["anc"]), anc_tokens(el["anc"]))
         f["neighbours"] = jaccard(neigh_tokens(anchor["neighbours"]), neigh_tokens(el["neighbours"]))
