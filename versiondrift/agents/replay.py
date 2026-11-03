@@ -30,11 +30,33 @@ class SelectorReplay:
         loc = None
         if s["css"]:
             l = p.locator(s["css"]).locator("visible=true")
+            if l.count() > 1:   # ambiguous selector: scope to an open dialog if any, then narrow by visible text
+                import re
+                modal = p.locator(".modal, [role=dialog]").locator("visible=true")
+                if modal.count() >= 1:
+                    lm = modal.last.locator(s["css"]).locator("visible=true")
+                    if lm.count() >= 1: l = lm
+                if l.count() > 1 and s["name"]:
+                    pat = re.compile(r"^\s*" + r"\s+".join(re.escape(w) for w in s["name"].split()) + r"\s*$")
+                    ln = l.filter(has_text=pat)
+                    if ln.count() == 0: ln = l.filter(has_text=re.compile(re.escape(s["name"][:40]), re.I))
+                    if ln.count() >= 1: l = ln
+                    else:   # inputs carry their name in placeholder/aria-label rather than text
+                        esc = s["name"].replace('"', '\\"')
+                        la = p.locator(f'{s["css"]}[placeholder="{esc}"],{s["css"]}[aria-label="{esc}"]').locator("visible=true")
+                        if la.count() >= 1: l = la
             if l.count() >= 1: loc = l.first
-        if loc is None and s["name"]:   # fallback: same tag + exact visible text (what a hand-written test script would do)
+        if loc is None and s["name"]:
             import re
-            l = p.locator(step["anchor"]["tag"]).filter(has_text=re.compile(rf"^\s*{re.escape(s['name'])}\s*$")).locator("visible=true")
-            if l.count() >= 1: loc = l.last if step["anchor"]["tag"] in ("button", "div") else l.first
+            nm = s["name"]
+            # fallback 1: attribute carrying the accessible name (aria-label / title / tooltip / placeholder)
+            esc = nm.replace('"', '\\"')
+            l = p.locator(f'[aria-label="{esc}"],[title="{esc}"],[data-tooltip-content="{esc}"],[placeholder="{esc}"]').locator("visible=true")
+            if l.count() >= 1: loc = l.first
+            else:   # fallback 2: same tag + exact visible text, whitespace-insensitive (what a hand-written test script would do)
+                pat = re.compile(r"^\s*" + r"\s+".join(re.escape(w) for w in nm.split()) + r"\s*$")
+                l = p.locator(step["anchor"]["tag"]).filter(has_text=pat).locator("visible=true")
+                if l.count() >= 1: loc = l.last if step["anchor"]["tag"] in ("button", "div") else l.first
         if loc is None: return Outcome(False, halted="selector_not_found")
         bb = loc.bounding_box(); x, y = bb["x"] + bb["width"] / 2, bb["y"] + bb["height"] / 2
         _do(drv, step, x, y); return Outcome(True, x, y)

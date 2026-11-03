@@ -16,6 +16,10 @@ SNAPSHOT_JS = r"""
     const cs = getComputedStyle(e);
     if (cs.visibility === 'hidden' || cs.display === 'none' || parseFloat(cs.opacity) === 0) continue;
     if (r.bottom < 0 || r.right < 0 || r.top > innerHeight || r.right > innerWidth + 50) continue;
+    // occlusion: the element (or a descendant/ancestor) must be what is actually painted at its centre
+    const px = Math.min(Math.max(r.x + r.width / 2, 0), innerWidth - 1), py = Math.min(Math.max(r.y + r.height / 2, 0), innerHeight - 1);
+    const top = document.elementFromPoint(px, py);
+    if (!top || !(e === top || e.contains(top) || top.contains(e))) continue;
     let role = e.getAttribute('role') || IMPLICIT[e.tagName] || (e.matches('.item') ? 'menuitem' : 'generic');
     if (e.tagName === 'INPUT') { const t = (e.type||'text'); role = t==='checkbox'?'checkbox':t==='radio'?'radio':(['submit','button'].includes(t)?'button':'textbox'); }
     let name = e.getAttribute('aria-label') || '';
