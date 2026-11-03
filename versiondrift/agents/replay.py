@@ -39,7 +39,7 @@ class SelectorReplay:
                 if l.count() > 1 and s["name"]:
                     pat = re.compile(r"^\s*" + r"\s+".join(re.escape(w) for w in s["name"].split()) + r"\s*$")
                     ln = l.filter(has_text=pat)
-                    if ln.count() == 0: ln = l.filter(has_text=re.compile(re.escape(s["name"][:40]), re.I))
+                    if ln.count() == 0: ln = l.filter(has_text=re.compile(r"\s+".join(re.escape(w) for w in s["name"].split()[:6]), re.I))
                     if ln.count() >= 1: l = ln
                     else:   # inputs carry their name in placeholder/aria-label rather than text
                         esc = s["name"].replace('"', '\\"')

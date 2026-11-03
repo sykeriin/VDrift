@@ -1,4 +1,5 @@
-import sys, os, json, itertools
+"""Run replay conditions for one version pair. Usage: run_cli vA vB agents out.json [slot] [--aa]"""
+import sys, json
 from pathlib import Path
 from ..envs.gitea import GiteaEnv
 from ..drivers.playwright_driver import Driver
@@ -13,20 +14,23 @@ AGENTS = {"coord": CoordReplay, "selector": SelectorReplay, "similo": SimiloRepl
           "reground_noverify": lambda: ReGround(name="reground_noverify", verify_effects=False),
           "reground_noctx": lambda: ReGround(name="reground_noctx", use_ctx=False)}
 
-def main(vA, vB, agents, out):
-    drv = Driver(); envA, envB = GiteaEnv(vA), GiteaEnv(vB)
+def main(vA, vB, agents, out, slot=0, aa=False):
+    drv = Driver(); envs = {vA: GiteaEnv(vA, slot=slot), vB: GiteaEnv(vB, slot=slot)}
     results = []
+    plan = ([(vA, vA)] if aa else []) + [(vB, vA)]       # (run-on, trajectory-from)
     for name in agents:
         agent = AGENTS[name]()
-        for env_v, src_v in ((vA, vA), (vB, vA)):      # control: A on A (sanity), then A-memory replayed on B
-            env = envA if env_v == vA else envB
+        for run_v, src_v in plan:
+            env = envs[run_v]
             for t in TASKS:
-                traj = tj.load(t.id, src_v); gt = tj.load(t.id, env_v)
-                r = runner.run_one(env, drv, t, env_v, agent, traj, gt)
-                r["source_version"] = src_v; results.append(r)
-                print(f"{name:18} {src_v}->{env_v} {t.id:18} {'PASS' if r['success'] else 'FAIL'} {r['halted'] or ''}", flush=True)
-    envA.stop(); envB.stop(); drv.close()
-    Path(out).parent.mkdir(parents=True, exist_ok=True); Path(out).write_text(json.dumps(results, indent=1))
+                traj = tj.load(t.id, src_v); gt = tj.load(t.id, run_v)
+                r = runner.run_one(env, drv, t, run_v, agent, traj, gt)
+                r["source_version"] = src_v; r["pair"] = f"{src_v}->{run_v}"; results.append(r)
+                print(f"{name:18} {src_v}->{run_v} {t.id:18} {'PASS' if r['success'] else 'FAIL'} {r['halted'] or ''}", flush=True)
+        Path(out).parent.mkdir(parents=True, exist_ok=True); Path(out).write_text(json.dumps(results, indent=1))  # incremental save
+    for e in envs.values(): e.stop()
+    drv.close()
 
 if __name__ == "__main__":
-    main(sys.argv[1], sys.argv[2], sys.argv[3].split(","), sys.argv[4])
+    a = [x for x in sys.argv[1:] if not x.startswith("--")]
+    main(a[0], a[1], a[2].split(","), a[3], int(a[4]) if len(a) > 4 else 0, "--aa" in sys.argv)

@@ -9,7 +9,7 @@ BIN_DIR = Path(os.environ.get("VD_BIN_DIR", "/home/user/vd-bins"))
 DATA_DIR = Path(os.environ.get("VD_DATA_DIR", "/home/user/versiondrift/data"))
 RUN_AS = ["setpriv", "--reuid=vd", "--regid=vd", "--clear-groups"]
 ADMIN = ("vdadmin", "vdadmin-pass-1", "admin@example.com")
-PORTS = {"1.17.4": 3017, "1.22.3": 3022}
+PORTS = {"1.17.4": 3017, "1.19.4": 3019, "1.21.11": 3021, "1.22.3": 3022}
 
 APP_INI = """APP_NAME = Gitea
 RUN_MODE = prod
@@ -52,13 +52,14 @@ SHOW_FOOTER_TEMPLATE_LOAD_TIME = false
 class GiteaEnv:
     version: str
     proc: subprocess.Popen | None = None
+    slot: int = 0    # parallel workers: own port (+100*slot) and work dir; the snapshot is shared read-only
 
     @property
-    def port(self): return PORTS[self.version]
+    def port(self): return PORTS[self.version] + 100 * self.slot
     @property
     def url(self): return f"http://127.0.0.1:{self.port}"
     @property
-    def work(self): return DATA_DIR / f"gitea-{self.version}"
+    def work(self): return DATA_DIR / (f"gitea-{self.version}" if self.slot == 0 else f"gitea-{self.version}-s{self.slot}")
     @property
     def snapshot(self): return DATA_DIR / f"gitea-{self.version}.snapshot"
     @property
@@ -95,6 +96,7 @@ class GiteaEnv:
         self.stop()
         shutil.rmtree(self.work, ignore_errors=True)
         shutil.copytree(self.snapshot, self.work)
+        (self.work/"app.ini").write_text(APP_INI.format(work=self.work, port=self.port))   # slot-specific paths/port
         self._chown(self.work)
         self.start()
 
