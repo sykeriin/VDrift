@@ -9,9 +9,12 @@ from .metrics import mcnemar_exact, staleness_pr, tier_use, halts
 PAIRS = [("1.17.4", "1.19.4"), ("1.19.4", "1.21.11"), ("1.21.11", "1.22.3"), ("1.17.4", "1.22.3")]
 
 def load_all(paths):
-    out = []
-    for p in paths: out += json.load(open(p))
-    return out
+    """Later files override earlier ones for the same (agent, pair, task, run-version): lets re-runs replace stale results."""
+    d = {}
+    for p in paths:
+        for r in json.load(open(p)): d[(r["agent"], r["source_version"], r["version"], r["task"])] = r
+    for r in d.values(): r.setdefault("pair", f"{r['source_version']}->{r['version']}")
+    return list(d.values())
 
 def is_drift(r): return r["source_version"] != r["version"]
 
@@ -77,7 +80,8 @@ def main(paths):
             ci = paired_bootstrap(drift, a, b)
             by = defaultdict(dict)
             for r in drift: by[(r["pair"], r["task"])][r["agent"]] = r["success"]
-            x = sum(1 for u in by.values() if u.get(a) and not u.get(b)); y = sum(1 for u in by.values() if u.get(b) and not u.get(a))
+            both = [u for u in by.values() if a in u and b in u]    # only units where BOTH agents ran
+            x = sum(1 for u in both if u[a] and not u[b]); y = sum(1 for u in both if u[b] and not u[a])
             from math import comb
             n = x + y; p = 1.0 if n == 0 else min(1.0, 2 * sum(comb(n, i) for i in range(0, min(x, y) + 1)) / 2 ** n)
             print(f"  {a} - {b}: {ci[0]:+.3f} [{ci[1]:+.3f}, {ci[2]:+.3f}] n={ci[3]}  only-first={x} only-second={y} p={p:.3f}" if ci else f"  {a} - {b}: no data")

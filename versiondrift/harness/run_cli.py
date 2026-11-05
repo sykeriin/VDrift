@@ -7,7 +7,7 @@ from ..agents.replay import CoordReplay, SelectorReplay, SimiloReplay
 from ..reground.middleware import ReGround
 from . import trajectory as tj, runner
 
-AGENTS = {"coord": CoordReplay, "selector": SelectorReplay, "similo": SimiloReplay,
+AGENTS = {"coord": CoordReplay, "selector": SelectorReplay, "similo": SimiloReplay, "similo_noattr": lambda: SimiloReplay(use_attrs=False, name="similo_noattr"),
           "reground": lambda: ReGround(name="reground"),
           "reground_noguard": lambda: ReGround(name="reground_noguard", guard=False),
           "reground_noverify": lambda: ReGround(name="reground_noverify", verify_effects=False),
