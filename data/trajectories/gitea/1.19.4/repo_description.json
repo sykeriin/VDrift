@@ -1,0 +1,186 @@
+{
+ "task": "repo_description",
+ "version": "1.19.4",
+ "check_passed": true,
+ "steps": [
+  {
+   "idx": 0,
+   "intent": "open repository settings",
+   "action": "click",
+   "value": null,
+   "x": 1153.1953125,
+   "y": 143.5,
+   "irreversible": false,
+   "anchor": {
+    "tag": "a",
+    "role": "link",
+    "name": "Settings",
+    "text": "Settings",
+    "attrs": {
+     "href": "/vdadmin/demo/settings",
+     "class": "item"
+    },
+    "bbox": [
+     1103,
+     124,
+     101,
+     40
+    ],
+    "anc": [
+     "|||menu",
+     "|||tabular",
+     "|||header",
+     "main|vdadmin/demo||"
+    ],
+    "i": 32,
+    "center": [
+     1153.5,
+     144.0
+    ],
+    "neighbours": [
+     "You cannot fork a repository you own.",
+     "Fork",
+     "0",
+     "0"
+    ]
+   },
+   "selector": {
+    "css": "a[href=\"/vdadmin/demo/settings\"]",
+    "role": "link",
+    "name": "Settings"
+   },
+   "effect": {
+    "url_changed": true,
+    "path": "/vdadmin/demo/settings",
+    "appeared": [
+     "authorization",
+     "avatar",
+     "branches",
+     "choose new avatar",
+     "collaborators",
+     "delete current avatar",
+     "deploy keys",
+     "description",
+     "git remote repository url",
+     "how do i mirror repositories?"
+    ],
+    "disappeared": [
+     "0 tags",
+     "1 branch",
+     "1 commit",
+     "28 kib",
+     "39a5c94f49",
+     "about software",
+     "add file",
+     "api",
+     "copy url",
+     "english"
+    ]
+   }
+  },
+  {
+   "idx": 1,
+   "intent": "type description",
+   "action": "type",
+   "value": "versiondrift description",
+   "x": 640.0,
+   "y": 529.765625,
+   "irreversible": false,
+   "anchor": {
+    "tag": "textarea",
+    "role": "textbox",
+    "name": "Description",
+    "text": "",
+    "attrs": {
+     "id": "description",
+     "name": "description"
+    },
+    "bbox": [
+     91,
+     500,
+     1099,
+     60
+    ],
+    "anc": [
+     "||form|form",
+     "main|Repository||"
+    ],
+    "i": 47,
+    "center": [
+     640.5,
+     530.0
+    ],
+    "neighbours": [
+     "Website",
+     "Website",
+     "Repository Name",
+     "Repository Name"
+    ]
+   },
+   "selector": {
+    "css": "#description",
+    "role": "textbox",
+    "name": "Description"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/vdadmin/demo/settings",
+    "appeared": [],
+    "disappeared": []
+   }
+  },
+  {
+   "idx": 2,
+   "intent": "save settings",
+   "action": "click",
+   "value": null,
+   "x": 165.2890625,
+   "y": 668.75,
+   "irreversible": false,
+   "anchor": {
+    "tag": "button",
+    "role": "button",
+    "name": "Update Settings",
+    "text": "Update Settings",
+    "attrs": {
+     "class": "ui green button"
+    },
+    "bbox": [
+     91,
+     650,
+     150,
+     38
+    ],
+    "anc": [
+     "||form|form",
+     "main|Repository||"
+    ],
+    "i": 50,
+    "center": [
+     166.0,
+     669.0
+    ],
+    "neighbours": [
+     "Choose new avatar",
+     "Update Avatar",
+     "Delete Current Avatar",
+     "Visibility"
+    ]
+   },
+   "selector": {
+    "css": null,
+    "role": "button",
+    "name": "Update Settings"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/vdadmin/demo/settings",
+    "appeared": [],
+    "disappeared": [
+     "mirror interval (valid time units are 'h', 'm', 's'). 0 to disable periodic sync",
+     "sync when commits are pushed"
+    ]
+   }
+  }
+ ]
+}

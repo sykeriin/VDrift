@@ -1,0 +1,473 @@
+[
+ {
+  "task": "star_repo",
+  "version": "1.22.3",
+  "agent": "reground_cont",
+  "success": true,
+  "halted": null,
+  "seconds": 3.46,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.05,
+    "stale": true,
+    "score": 0.894,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.22.3",
+  "app": "gitea"
+ },
+ {
+  "task": "repo_description",
+  "version": "1.22.3",
+  "agent": "reground_cont",
+  "success": true,
+  "halted": null,
+  "seconds": 10.17,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.731,
+    "stale": false,
+    "score": 0.731,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.504,
+    "stale": true,
+    "score": 0.868,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.076,
+    "stale": true,
+    "score": 0.791,
+    "effect_ok": null,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.22.3",
+  "app": "gitea"
+ },
+ {
+  "task": "create_issue",
+  "version": "1.22.3",
+  "agent": "reground_cont",
+  "success": true,
+  "halted": null,
+  "seconds": 13.52,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.41,
+    "stale": true,
+    "score": 0.826,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.267,
+    "stale": true,
+    "score": 0.798,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.173,
+    "stale": true,
+    "score": 0.653,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.0,
+    "stale": true,
+    "score": 0.662,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.22.3",
+  "app": "gitea"
+ },
+ {
+  "task": "create_label",
+  "version": "1.22.3",
+  "agent": "reground_cont",
+  "success": true,
+  "halted": "effect_mismatch",
+  "seconds": 16.91,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.156,
+    "stale": true,
+    "score": 0.854,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.267,
+    "stale": true,
+    "score": 0.659,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.0,
+    "stale": true,
+    "score": 0.639,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 3,
+    "ok": false,
+    "halted": "effect_mismatch",
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.0,
+    "stale": true,
+    "score": 0.635,
+    "effect_ok": false,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.22.3",
+  "app": "gitea"
+ },
+ {
+  "task": "create_repo",
+  "version": "1.22.3",
+  "agent": "reground_cont",
+  "success": true,
+  "halted": null,
+  "seconds": 13.51,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.831,
+    "stale": false,
+    "score": 0.831,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.882,
+    "stale": false,
+    "score": 0.882,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.861,
+    "stale": false,
+    "score": 0.861,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.0,
+    "stale": true,
+    "score": 0.767,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.22.3",
+  "app": "gitea"
+ },
+ {
+  "task": "add_collaborator",
+  "version": "1.22.3",
+  "agent": "reground_cont",
+  "success": true,
+  "halted": null,
+  "seconds": 13.48,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.05,
+    "stale": true,
+    "score": 0.651,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.164,
+    "stale": true,
+    "score": 0.616,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.414,
+    "stale": true,
+    "score": 0.692,
+    "effect_ok": null,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.507,
+    "stale": true,
+    "score": 0.688,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.22.3",
+  "app": "gitea"
+ },
+ {
+  "task": "change_full_name",
+  "version": "1.22.3",
+  "agent": "reground_cont",
+  "success": true,
+  "halted": null,
+  "seconds": 13.46,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.832,
+    "stale": false,
+    "score": 0.832,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.543,
+    "stale": true,
+    "score": 0.803,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.322,
+    "stale": true,
+    "score": 0.87,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.378,
+    "stale": true,
+    "score": 0.727,
+    "effect_ok": null,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.22.3",
+  "app": "gitea"
+ },
+ {
+  "task": "create_branch",
+  "version": "1.22.3",
+  "agent": "reground_cont",
+  "success": true,
+  "halted": null,
+  "seconds": 10.12,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.139,
+    "stale": true,
+    "score": 0.624,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.075,
+    "stale": true,
+    "score": 0.77,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.095,
+    "stale": true,
+    "score": 0.83,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.22.3",
+  "app": "gitea"
+ },
+ {
+  "task": "delete_repo",
+  "version": "1.22.3",
+  "agent": "reground_cont",
+  "success": false,
+  "halted": "needs_confirmation",
+  "seconds": 0.11,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": false,
+    "halted": "needs_confirmation",
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.453,
+    "stale": true,
+    "score": 0.659,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.22.3",
+  "app": "gitea"
+ }
+]

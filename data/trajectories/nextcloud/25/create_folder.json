@@ -1,0 +1,202 @@
+{
+ "task": "create_folder",
+ "version": "25",
+ "check_passed": true,
+ "steps": [
+  {
+   "idx": 0,
+   "intent": "open new menu",
+   "action": "click",
+   "value": null,
+   "x": 396.0,
+   "y": 80.0,
+   "irreversible": false,
+   "anchor": {
+    "tag": "a",
+    "role": "link",
+    "name": "New file/folder menu",
+    "text": "New file/folder menu",
+    "attrs": {
+     "href": "#",
+     "class": "button new"
+    },
+    "bbox": [
+     374,
+     58,
+     44,
+     44
+    ],
+    "anc": [
+     "||main|"
+    ],
+    "i": 25,
+    "center": [
+     396.0,
+     80.0
+    ],
+    "neighbours": [
+     "Home",
+     "Activity",
+     "Nextcloud.png Recently edited",
+     "Photos"
+    ]
+   },
+   "selector": {
+    "css": "a[href=\"#\"]",
+    "role": "link",
+    "name": "New file/folder menu"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/index.php/apps/files/",
+    "appeared": [
+     "new folder",
+     "new text file",
+     "upload file"
+    ],
+    "disappeared": []
+   }
+  },
+  {
+   "idx": 1,
+   "intent": "new folder",
+   "action": "click",
+   "value": null,
+   "x": 402.3046875,
+   "y": 177.0,
+   "irreversible": false,
+   "anchor": {
+    "tag": "a",
+    "role": "link",
+    "name": "New folder",
+    "text": "New folder",
+    "attrs": {
+     "href": "#",
+     "class": "menuitem"
+    },
+    "bbox": [
+     329,
+     155,
+     147,
+     44
+    ],
+    "anc": [
+     "|||menu",
+     "||main|"
+    ],
+    "i": 27,
+    "center": [
+     402.5,
+     177.0
+    ],
+    "neighbours": [
+     "Upload file",
+     "New text file",
+     "Nextcloud.png Recently edited",
+     "New file/folder menu"
+    ]
+   },
+   "selector": {
+    "css": "a[href=\"#\"]",
+    "role": "link",
+    "name": "New folder"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/index.php/apps/files/",
+    "appeared": [],
+    "disappeared": [
+     "nextcloud.png recently edited"
+    ]
+   }
+  },
+  {
+   "idx": 2,
+   "intent": "type folder name",
+   "action": "type",
+   "value": "Projects",
+   "x": 438.0,
+   "y": 175.0,
+   "irreversible": false,
+   "anchor": {
+    "tag": "input",
+    "role": "textbox",
+    "name": "",
+    "text": "",
+    "attrs": {
+     "id": "view11-input-folder",
+     "type": "text",
+     "class": "focus-visible",
+     "value": "New folder"
+    },
+    "bbox": [
+     373,
+     157,
+     130,
+     36
+    ],
+    "anc": [
+     "||form|form",
+     "|||menu",
+     "|||menu",
+     "||main|"
+    ],
+    "i": 28,
+    "center": [
+     438.0,
+     175.0
+    ],
+    "neighbours": [
+     "New folder",
+     "Upload file",
+     "New text file",
+     " "
+    ]
+   },
+   "selector": {
+    "css": "#view11-input-folder",
+    "role": "textbox",
+    "name": ""
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/index.php/apps/files/",
+    "appeared": [],
+    "disappeared": []
+   }
+  },
+  {
+   "idx": 3,
+   "intent": "confirm",
+   "action": "key",
+   "value": "Enter",
+   "x": null,
+   "y": null,
+   "irreversible": false,
+   "anchor": null,
+   "selector": null,
+   "effect": {
+    "url_changed": false,
+    "path": "/index.php/apps/files/",
+    "appeared": [
+     "activity comments sharing",
+     "activity you created projects november 5, 2026 2:17 am seconds ago",
+     "close sidebar",
+     "comments",
+     "favorite",
+     "in projects",
+     "nextcloud.png recently edited",
+     "not favorited projects share actions",
+     "select directory \"projects\"",
+     "sharing"
+    ],
+    "disappeared": [
+     "new folder",
+     "new text file",
+     "nextcloud manual.pdf recently edited",
+     "upload file"
+    ]
+   }
+  }
+ ]
+}

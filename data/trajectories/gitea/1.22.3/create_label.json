@@ -1,0 +1,267 @@
+{
+ "task": "create_label",
+ "version": "1.22.3",
+ "check_passed": true,
+ "steps": [
+  {
+   "idx": 0,
+   "intent": "open labels",
+   "action": "click",
+   "value": null,
+   "x": 67.9453125,
+   "y": 174.1015625,
+   "irreversible": false,
+   "anchor": {
+    "tag": "a",
+    "role": "link",
+    "name": "Labels",
+    "text": "Labels",
+    "attrs": {
+     "href": "/vdadmin/demo/labels",
+     "class": "item"
+    },
+    "bbox": [
+     33,
+     157,
+     70,
+     33
+    ],
+    "anc": [
+     "|||menu",
+     "|||header",
+     "main|Issues||"
+    ],
+    "i": 32,
+    "center": [
+     68.0,
+     173.5
+    ],
+    "neighbours": [
+     "Code",
+     "0 Open",
+     "Milestones",
+     "vdadmin"
+    ]
+   },
+   "selector": {
+    "css": "a[href=\"/vdadmin/demo/labels\"]",
+    "role": "link",
+    "name": "Labels"
+   },
+   "effect": {
+    "url_changed": true,
+    "path": "/vdadmin/demo/labels",
+    "appeared": [
+     "default (bug, duplicate, enhancement, help wanted, invalid, question, wontfix)",
+     "new label",
+     "use label set"
+    ],
+    "disappeared": [
+     "0 closed",
+     "0 open",
+     "assignee",
+     "label",
+     "milestone",
+     "new issue",
+     "project",
+     "search...",
+     "shows a maximum of 30 users",
+     "type"
+    ]
+   }
+  },
+  {
+   "idx": 1,
+   "intent": "new label",
+   "action": "click",
+   "value": null,
+   "x": 1191.859375,
+   "y": 174.109375,
+   "irreversible": false,
+   "anchor": {
+    "tag": "button",
+    "role": "button",
+    "name": "New Label",
+    "text": "New Label",
+    "attrs": {
+     "class": "ui small primary new-label button"
+    },
+    "bbox": [
+     1139,
+     156,
+     106,
+     35
+    ],
+    "anc": [
+     "|||navbar",
+     "main|Labels||"
+    ],
+    "i": 34,
+    "center": [
+     1192.0,
+     173.5
+    ],
+    "neighbours": [
+     "Settings",
+     "Sort",
+     "You cannot fork a repository you own.",
+     "Fork"
+    ]
+   },
+   "selector": {
+    "css": null,
+    "role": "button",
+    "name": "New Label"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/vdadmin/demo/labels",
+    "appeared": [
+     "#c320f6",
+     "cancel",
+     "color",
+     "create label",
+     "description",
+     "exclusive",
+     "label name",
+     "name"
+    ],
+    "disappeared": [
+     "about software",
+     "actions",
+     "activity",
+     "api",
+     "code",
+     "code issues pull requests actions packages projects releases wiki activity setti",
+     "create\u2026",
+     "dashboard",
+     "default (bug, duplicate, enhancement, help wanted, invalid, question, wontfix)",
+     "demo"
+    ]
+   }
+  },
+  {
+   "idx": 2,
+   "intent": "type label name",
+   "action": "type",
+   "value": "needs-triage",
+   "x": 640.0,
+   "y": 509.15625,
+   "irreversible": false,
+   "anchor": {
+    "tag": "input",
+    "role": "textbox",
+    "name": "Label name",
+    "text": "",
+    "attrs": {
+     "name": "title",
+     "placeholder": "Label name",
+     "class": "label-name-input"
+    },
+    "bbox": [
+     301,
+     491,
+     678,
+     35
+    ],
+    "anc": [
+     "||form|form",
+     "|||modal",
+     "|||modal"
+    ],
+    "i": 1,
+    "center": [
+     640.0,
+     508.5
+    ],
+    "neighbours": [
+     "Name",
+     "Description",
+     "Description",
+     "Color"
+    ]
+   },
+   "selector": {
+    "css": "input[name=\"title\"]",
+    "role": "textbox",
+    "name": "Label name"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/vdadmin/demo/labels",
+    "appeared": [],
+    "disappeared": []
+   }
+  },
+  {
+   "idx": 3,
+   "intent": "create label",
+   "action": "click",
+   "value": null,
+   "x": 919.8125,
+   "y": 778.125,
+   "irreversible": false,
+   "anchor": {
+    "tag": "button",
+    "role": "button",
+    "name": "Create Label",
+    "text": "Create Label",
+    "attrs": {
+     "class": "ui primary ok button"
+    },
+    "bbox": [
+     854,
+     759,
+     132,
+     38
+    ],
+    "anc": [
+     "|||modal",
+     "|||modal"
+    ],
+    "i": 25,
+    "center": [
+     920.0,
+     778.0
+    ],
+    "neighbours": [
+     "Cancel",
+     "Color",
+     "Description",
+     "Description"
+    ]
+   },
+   "selector": {
+    "css": null,
+    "role": "button",
+    "name": "Create Label"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/vdadmin/demo/labels",
+    "appeared": [
+     "0 open issues/pull requests",
+     "about software",
+     "actions",
+     "activity",
+     "api",
+     "code",
+     "code issues pull requests actions packages projects releases wiki activity setti",
+     "create\u2026",
+     "dashboard",
+     "delete"
+    ],
+    "disappeared": [
+     "#c320f6",
+     "cancel",
+     "color",
+     "create label",
+     "description",
+     "exclusive",
+     "label name",
+     "name"
+    ]
+   }
+  }
+ ]
+}

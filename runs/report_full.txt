@@ -1,0 +1,48 @@
+== same-version sanity (trajectory replayed on its own version; baseline must be ~100%) ==
+  coord_replay         27/27
+  reground             27/27
+  reground_noguard     27/27
+  reground_noverify    27/27
+  selector_replay      27/27
+  similo_noattr        27/27
+  similo_replay        27/27
+
+== A-memory replayed on a newer version: success by pair ==
+  agent               17.4>.19.4   19.4>21.11   1.11>.22.3   17.4>.22.3     pooled
+  coord_replay        6/9          1/9          5/9          0/9            12/36
+  reground            7/9          8/9          8/9          8/9            31/36
+  reground_cont       8/9          8/9          8/9          8/9            32/36
+  reground_cont_t50   7/9          -            -            -              7/9
+  reground_cont_t70   8/9          -            -            -              8/9
+  reground_noctx      8/9          8/9          9/9          8/9            33/36
+  reground_noguard    8/9          8/9          9/9          9/9            34/36
+  reground_noverify   7/9          8/9          8/9          8/9            31/36
+  selector_replay     6/9          7/9          8/9          5/9            26/36
+  similo_noattr       9/9          9/9          9/9          8/9            35/36
+  similo_replay       9/9          9/9          9/9          9/9            36/36
+
+== pooled success by task change type (worst step in task) ==
+  cosmetic              coord_replay:11/11  reground:11/11  reground_cont:11/11  reground_cont_t50:5/5  reground_cont_t70:5/5  reground_noctx:11/11  reground_noguard:11/11  reground_noverify:11/11  selector_replay:11/11  similo_noattr:11/11  similo_replay:11/11
+  relocation            coord_replay:0/23  reground:19/23  reground_cont:19/23  reground_cont_t50:1/3  reground_cont_t70:2/3  reground_noctx:21/23  reground_noguard:22/23  reground_noverify:19/23  selector_replay:15/23  similo_noattr:22/23  similo_replay:23/23
+  rename                coord_replay:1/2  reground:1/2  reground_cont:2/2  reground_cont_t50:1/1  reground_cont_t70:1/1  reground_noctx:1/2  reground_noguard:1/2  reground_noverify:1/2  selector_replay:0/2  similo_noattr:2/2  similo_replay:2/2
+  workflow_restructure   (no tasks)
+
+== paired comparisons on pooled (pair,task) units: diff = first - second, 95% bootstrap CI, exact McNemar p ==
+  reground - similo_replay: -0.139 [-0.250, -0.028] n=36  only-first=0 only-second=5 p=0.062
+  reground - coord_replay: +0.528 [+0.333, +0.694] n=36  only-first=20 only-second=1 p=0.000
+  reground - selector_replay: +0.139 [-0.028, +0.306] n=36  only-first=8 only-second=3 p=0.227
+  similo_replay - coord_replay: +0.667 [+0.500, +0.806] n=36  only-first=24 only-second=0 p=0.000
+  reground - reground_noguard: -0.083 [-0.194, +0.000] n=36  only-first=0 only-second=3 p=0.250
+  reground - reground_noverify: +0.000 [+0.000, +0.000] n=36  only-first=0 only-second=0 p=1.000
+  reground - reground_noctx: -0.056 [-0.194, +0.083] n=36  only-first=2 only-second=4 p=0.688
+
+== ReGround internals (A->B steps) ==
+  reground             tiers={'cached': 63, 'T0': 48, 'needs_model': 1} halts={'no_candidate': 1, 'needs_confirmation': 3, 'effect_mismatch': 1} staleness={'tp': 48, 'fp': 1, 'fn': 3, 'tn': 60, 'precision': 0.98, 'recall': 0.941}
+  reground_cont        tiers={'cached': 65, 'T0': 49} halts={'needs_confirmation': 3, 'effect_mismatch': 1} staleness={'tp': 48, 'fp': 1, 'fn': 3, 'tn': 62, 'precision': 0.98, 'recall': 0.941}
+  reground_cont_t50    tiers={'cached': 23, 'T0': 3} halts={'effect_mismatch': 1, 'needs_confirmation': 1} staleness={'tp': 3, 'fp': 0, 'fn': 1, 'tn': 22, 'precision': 1.0, 'recall': 0.75}
+  reground_cont_t70    tiers={'cached': 23, 'T0': 5} halts={'needs_confirmation': 1} staleness={'tp': 4, 'fp': 1, 'fn': 0, 'tn': 23, 'precision': 0.8, 'recall': 1.0}
+  reground_noctx       tiers={'T0': 47, 'cached': 70, 'needs_model': 1} halts={'effect_mismatch': 3, 'no_candidate': 1} staleness={'tp': 47, 'fp': 1, 'fn': 4, 'tn': 66, 'precision': 0.979, 'recall': 0.922}
+  reground_noguard     tiers={'cached': 69, 'T0': 48, 'needs_model': 1} halts={'no_candidate': 1, 'effect_mismatch': 1} staleness={'tp': 48, 'fp': 1, 'fn': 3, 'tn': 66, 'precision': 0.98, 'recall': 0.941}
+  reground_noverify    tiers={'cached': 63, 'T0': 48, 'needs_model': 1} halts={'no_candidate': 1, 'needs_confirmation': 3} staleness={'tp': 48, 'fp': 1, 'fn': 3, 'tn': 60, 'precision': 0.98, 'recall': 0.941}
+
+== wrong irreversible clicks (executed off-target) == {}

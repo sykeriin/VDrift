@@ -1,0 +1,257 @@
+{
+ "task": "change_full_name",
+ "version": "1.22.3",
+ "check_passed": true,
+ "steps": [
+  {
+   "idx": 0,
+   "intent": "open profile menu",
+   "action": "click",
+   "value": null,
+   "x": 1238.25,
+   "y": 24.5,
+   "irreversible": false,
+   "anchor": {
+    "tag": "div",
+    "role": "menu",
+    "name": "Profile and Settings\u2026",
+    "text": "vdadmin Signed in as vdadmin Profile Starred Subscriptions Settings Help Site Administration Sign Out",
+    "attrs": {
+     "class": "ui dropdown jump item tw-mx-0 tw-pr-2"
+    },
+    "bbox": [
+     1207,
+     7,
+     64,
+     36
+    ],
+    "anc": [
+     "|||navbar",
+     "|Navigation Bar|nav|"
+    ],
+    "i": 7,
+    "center": [
+     1239.0,
+     25.0
+    ],
+    "neighbours": [
+     "Create\u2026",
+     "Notifications",
+     "Organization",
+     "New Repository"
+    ]
+   },
+   "selector": {
+    "css": null,
+    "role": "menu",
+    "name": "Profile and Settings\u2026"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/",
+    "appeared": [
+     "help",
+     "profile",
+     "settings",
+     "sign out",
+     "signed in as vdadmin profile starred subscriptions settings help site administra",
+     "site administration",
+     "starred",
+     "subscriptions"
+    ],
+    "disappeared": [
+     "archived private",
+     "mirrors",
+     "more items",
+     "new repository",
+     "organization"
+    ]
+   }
+  },
+  {
+   "idx": 1,
+   "intent": "open user settings",
+   "action": "click",
+   "value": null,
+   "x": 1177.4453125,
+   "y": 220.390625,
+   "irreversible": false,
+   "anchor": {
+    "tag": "a",
+    "role": "menuitem",
+    "name": "Settings",
+    "text": "Settings",
+    "attrs": {
+     "id": "_aria_auto_id_8",
+     "href": "/user/settings",
+     "class": "item"
+    },
+    "bbox": [
+     1086,
+     201,
+     183,
+     38
+    ],
+    "anc": [
+     "|||menu",
+     "menu|Profile and Settings\u2026||dropdown",
+     "|||navbar",
+     "|Navigation Bar|nav|"
+    ],
+    "i": 12,
+    "center": [
+     1177.5,
+     220.0
+    ],
+    "neighbours": [
+     "SIGNED IN AS VDADMIN Profile Starred Subscriptions Settings Help Site Administra",
+     "Subscriptions",
+     "Help",
+     "Starred"
+    ]
+   },
+   "selector": {
+    "css": "#_aria_auto_id_8",
+    "role": "menuitem",
+    "name": "Settings"
+   },
+   "effect": {
+    "url_changed": true,
+    "path": "/user/settings",
+    "appeared": [
+     "account",
+     "actions",
+     "appearance",
+     "applications",
+     "biography",
+     "blocked users",
+     "choose new avatar",
+     "delete current avatar",
+     "email address",
+     "full name"
+    ],
+    "disappeared": [
+     "all 0",
+     "all 0 sources forks mirrors",
+     "forks",
+     "help",
+     "repository",
+     "repository organization",
+     "search repos...",
+     "settings",
+     "sign out",
+     "signed in as vdadmin profile starred subscriptions settings help site administra"
+    ]
+   }
+  },
+  {
+   "idx": 2,
+   "intent": "type full name",
+   "action": "type",
+   "value": "Durva Test",
+   "x": 768.0,
+   "y": 296.25,
+   "irreversible": false,
+   "anchor": {
+    "tag": "input",
+    "role": "textbox",
+    "name": "Full Name",
+    "text": "",
+    "attrs": {
+     "id": "full_name",
+     "name": "full_name"
+    },
+    "bbox": [
+     302,
+     277,
+     932,
+     38
+    ],
+    "anc": [
+     "||form|form",
+     "main|Profile||"
+    ],
+    "i": 26,
+    "center": [
+     768.0,
+     296.0
+    ],
+    "neighbours": [
+     "Email Address",
+     "Username",
+     "Biography",
+     "Username"
+    ]
+   },
+   "selector": {
+    "css": "#full_name",
+    "role": "textbox",
+    "name": "Full Name"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/user/settings",
+    "appeared": [],
+    "disappeared": []
+   }
+  },
+  {
+   "idx": 3,
+   "intent": "update profile",
+   "action": "click",
+   "value": null,
+   "x": 371.234375,
+   "y": 835.203125,
+   "irreversible": false,
+   "anchor": {
+    "tag": "button",
+    "role": "button",
+    "name": "Update Profile",
+    "text": "Update Profile",
+    "attrs": {
+     "class": "ui primary button"
+    },
+    "bbox": [
+     302,
+     816,
+     138,
+     38
+    ],
+    "anc": [
+     "||form|form",
+     "main|Profile||"
+    ],
+    "i": 41,
+    "center": [
+     371.0,
+     835.0
+    ],
+    "neighbours": [
+     "Makes the activity visible only for you and the admins",
+     "Hide Activity from profile page",
+     "This will hide your email address from your profile, as well as when you make a ",
+     "Hide Email Address"
+    ]
+   },
+   "selector": {
+    "css": null,
+    "role": "button",
+    "name": "Update Profile"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/user/settings",
+    "appeared": [],
+    "disappeared": [
+     "about software",
+     "api",
+     "english",
+     "footer",
+     "licenses",
+     "links",
+     "powered by gitea"
+    ]
+   }
+  }
+ ]
+}

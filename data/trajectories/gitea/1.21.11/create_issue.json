@@ -1,0 +1,277 @@
+{
+ "task": "create_issue",
+ "version": "1.21.11",
+ "check_passed": true,
+ "steps": [
+  {
+   "idx": 0,
+   "intent": "open issues",
+   "action": "click",
+   "value": null,
+   "x": 159.296875,
+   "y": 132.8125,
+   "irreversible": false,
+   "anchor": {
+    "tag": "a",
+    "role": "link",
+    "name": "Issues",
+    "text": "Issues",
+    "attrs": {
+     "href": "/vdadmin/demo/issues",
+     "class": "item"
+    },
+    "bbox": [
+     115,
+     112,
+     89,
+     41
+    ],
+    "anc": [
+     "|||tabular",
+     "|||header",
+     "main|vdadmin/demo||"
+    ],
+    "i": 23,
+    "center": [
+     159.5,
+     132.5
+    ],
+    "neighbours": [
+     "vdadmin / demo",
+     "demo",
+     "vdadmin",
+     "Code"
+    ]
+   },
+   "selector": {
+    "css": "a[href=\"/vdadmin/demo/issues\"]",
+    "role": "link",
+    "name": "Issues"
+   },
+   "effect": {
+    "url_changed": true,
+    "path": "/vdadmin/demo/issues",
+    "appeared": [
+     "0 closed",
+     "0 open",
+     "assignee",
+     "label",
+     "labels",
+     "milestone",
+     "new issue",
+     "project",
+     "search",
+     "search\u2026"
+    ],
+    "disappeared": [
+     "0 tags",
+     "1 branch",
+     "1 commit",
+     "675cae9e75",
+     "add file",
+     "copy url",
+     "git: 28 kib, lfs: 0 b",
+     "go to file",
+     "http",
+     "initial commit"
+    ]
+   }
+  },
+  {
+   "idx": 1,
+   "intent": "new issue",
+   "action": "click",
+   "value": null,
+   "x": 1192.0703125,
+   "y": 183.015625,
+   "irreversible": false,
+   "anchor": {
+    "tag": "a",
+    "role": "link",
+    "name": "New Issue",
+    "text": "New Issue",
+    "attrs": {
+     "href": "/vdadmin/demo/issues/new",
+     "class": "ui small primary button issue-list-new"
+    },
+    "bbox": [
+     1139,
+     165,
+     105,
+     35
+    ],
+    "anc": [
+     "|||header",
+     "main|Issues||"
+    ],
+    "i": 35,
+    "center": [
+     1191.5,
+     182.5
+    ],
+    "neighbours": [
+     "Settings",
+     "Sort",
+     "Type",
+     "Search"
+    ]
+   },
+   "selector": {
+    "css": "a[href=\"/vdadmin/demo/issues/new\"]",
+    "role": "link",
+    "name": "New Issue"
+   },
+   "effect": {
+    "url_changed": true,
+    "path": "/vdadmin/demo/issues/new",
+    "appeared": [
+     "add a bullet list",
+     "add a link",
+     "add a list of tasks",
+     "add a numbered list",
+     "add bold text",
+     "add code",
+     "add heading",
+     "add italic text",
+     "assignees",
+     "create issue"
+    ],
+    "disappeared": [
+     "0 closed",
+     "0 open",
+     "assignee",
+     "label",
+     "project",
+     "search",
+     "search\u2026",
+     "shows a maximum of 30 users",
+     "sort",
+     "type"
+    ]
+   }
+  },
+  {
+   "idx": 2,
+   "intent": "type title",
+   "action": "type",
+   "value": "Broken login",
+   "x": 510.0,
+   "y": 199.296875,
+   "irreversible": false,
+   "anchor": {
+    "tag": "input",
+    "role": "textbox",
+    "name": "Title",
+    "text": "",
+    "attrs": {
+     "id": "issue_title",
+     "name": "title",
+     "placeholder": "Title"
+    },
+    "bbox": [
+     103,
+     180,
+     814,
+     38
+    ],
+    "anc": [
+     "||form|form",
+     "main|New Issue||"
+    ],
+    "i": 31,
+    "center": [
+     510.0,
+     199.0
+    ],
+    "neighbours": [
+     "Projects",
+     "Releases",
+     "Packages",
+     "Reference an issue or pull request"
+    ]
+   },
+   "selector": {
+    "css": "#issue_title",
+    "role": "textbox",
+    "name": "Title"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/vdadmin/demo/issues/new",
+    "appeared": [],
+    "disappeared": []
+   }
+  },
+  {
+   "idx": 3,
+   "intent": "submit issue",
+   "action": "click",
+   "value": null,
+   "x": 853.5234375,
+   "y": 613.859375,
+   "irreversible": false,
+   "anchor": {
+    "tag": "button",
+    "role": "button",
+    "name": "Create Issue",
+    "text": "Create Issue",
+    "attrs": {
+     "class": "ui primary button"
+    },
+    "bbox": [
+     790,
+     595,
+     127,
+     38
+    ],
+    "anc": [
+     "||form|form",
+     "main|New Issue||"
+    ],
+    "i": 50,
+    "center": [
+     853.5,
+     614.0
+    ],
+    "neighbours": [
+     "Assignees",
+     "Projects",
+     "No Assignees",
+     "No project"
+    ]
+   },
+   "selector": {
+    "css": null,
+    "role": "button",
+    "name": "Create Issue"
+   },
+   "effect": {
+    "url_changed": true,
+    "path": "/vdadmin/demo/issues/1",
+    "appeared": [
+     "#1 - broken login",
+     "2026-11-03 12:55:44 +00:00",
+     "close issue",
+     "comment",
+     "copy link quote reply reference in new issue edit",
+     "edit",
+     "issues 1",
+     "manually add time",
+     "no description provided.",
+     "start time tracking"
+    ],
+    "disappeared": [
+     "about software",
+     "api",
+     "create issue",
+     "english",
+     "footer",
+     "licenses",
+     "links",
+     "powered by gitea",
+     "title"
+    ]
+   }
+  }
+ ]
+}

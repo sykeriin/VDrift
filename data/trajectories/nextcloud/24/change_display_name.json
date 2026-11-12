@@ -1,0 +1,75 @@
+{
+ "task": "change_display_name",
+ "version": "24",
+ "check_passed": true,
+ "steps": [
+  {
+   "idx": 0,
+   "intent": "type full name",
+   "action": "type",
+   "value": "Durva Test",
+   "x": 789.9921875,
+   "y": 150.0,
+   "irreversible": false,
+   "anchor": {
+    "tag": "input",
+    "role": "textbox",
+    "name": "Full name",
+    "text": "",
+    "attrs": {
+     "id": "displayname",
+     "type": "text",
+     "placeholder": "Your full name"
+    },
+    "bbox": [
+     643,
+     133,
+     293,
+     34
+    ],
+    "anc": [
+     "main|||"
+    ],
+    "i": 38,
+    "center": [
+     789.5,
+     150.0
+    ],
+    "neighbours": [
+     "Change scope level of full name",
+     "Change privacy level of phone number",
+     "Phone number",
+     "Phone number"
+    ]
+   },
+   "selector": {
+    "css": "#displayname",
+    "role": "textbox",
+    "name": "Full name"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/index.php/settings/user",
+    "appeared": [],
+    "disappeared": []
+   }
+  },
+  {
+   "idx": 1,
+   "intent": "confirm",
+   "action": "key",
+   "value": "Enter",
+   "x": null,
+   "y": null,
+   "irreversible": false,
+   "anchor": null,
+   "selector": null,
+   "effect": {
+    "url_changed": false,
+    "path": "/index.php/settings/user",
+    "appeared": [],
+    "disappeared": []
+   }
+  }
+ ]
+}

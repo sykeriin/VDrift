@@ -1,0 +1,662 @@
+[
+ {
+  "task": "create_folder",
+  "version": "24",
+  "agent": "reground_off",
+  "success": true,
+  "halted": null,
+  "seconds": 1.78,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.556,
+    "stale": true,
+    "score": 0.556,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "key"
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "rename_file",
+  "version": "24",
+  "agent": "reground_off",
+  "success": true,
+  "halted": null,
+  "seconds": 2.02,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.556,
+    "stale": true,
+    "score": 0.556,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "key"
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "favorite_file",
+  "version": "24",
+  "agent": "reground_off",
+  "success": true,
+  "halted": null,
+  "seconds": 1.33,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "delete_file",
+  "version": "24",
+  "agent": "reground_off",
+  "success": true,
+  "halted": null,
+  "seconds": 1.28,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "add_user",
+  "version": "24",
+  "agent": "reground_off",
+  "success": true,
+  "halted": null,
+  "seconds": 2.06,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "create_group",
+  "version": "24",
+  "agent": "reground_off",
+  "success": true,
+  "halted": null,
+  "seconds": 1.32,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "key"
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "change_display_name",
+  "version": "24",
+  "agent": "reground_off",
+  "success": true,
+  "halted": null,
+  "seconds": 1.03,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "key"
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "create_folder",
+  "version": "25",
+  "agent": "reground_off",
+  "success": true,
+  "halted": null,
+  "seconds": 2.16,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.591,
+    "stale": true,
+    "score": 0.591,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.914,
+    "stale": false,
+    "score": 0.914,
+    "effect_ok": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.553,
+    "stale": true,
+    "score": 0.553,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "key"
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "rename_file",
+  "version": "25",
+  "agent": "reground_off",
+  "success": true,
+  "halted": null,
+  "seconds": 2.27,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.997,
+    "stale": false,
+    "score": 0.997,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.947,
+    "stale": false,
+    "score": 0.947,
+    "effect_ok": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.464,
+    "stale": true,
+    "score": 0.464,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "key"
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "favorite_file",
+  "version": "25",
+  "agent": "reground_off",
+  "success": true,
+  "halted": null,
+  "seconds": 1.36,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.997,
+    "stale": false,
+    "score": 0.997,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.997,
+    "stale": false,
+    "score": 0.997,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "delete_file",
+  "version": "25",
+  "agent": "reground_off",
+  "success": true,
+  "halted": null,
+  "seconds": 1.25,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.997,
+    "stale": false,
+    "score": 0.997,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.536,
+    "stale": true,
+    "score": 0.873,
+    "effect_ok": null,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "add_user",
+  "version": "25",
+  "agent": "reground_off",
+  "success": true,
+  "halted": null,
+  "seconds": 2.2,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.999,
+    "stale": false,
+    "score": 0.999,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.867,
+    "stale": false,
+    "score": 0.867,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.867,
+    "stale": false,
+    "score": 0.867,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.892,
+    "stale": false,
+    "score": 0.892,
+    "effect_ok": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "create_group",
+  "version": "25",
+  "agent": "reground_off",
+  "success": true,
+  "halted": null,
+  "seconds": 2.15,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.998,
+    "stale": false,
+    "score": 0.998,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.88,
+    "stale": false,
+    "score": 0.88,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "key"
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "change_display_name",
+  "version": "25",
+  "agent": "reground_off",
+  "success": false,
+  "halted": null,
+  "seconds": 1.1,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.935,
+    "stale": false,
+    "score": 0.935,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "key"
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ }
+]

@@ -1,0 +1,904 @@
+[
+ {
+  "task": "create_folder",
+  "version": "24",
+  "agent": "coord_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 2.19,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "rename_file",
+  "version": "24",
+  "agent": "coord_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 1.75,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "favorite_file",
+  "version": "24",
+  "agent": "coord_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 1.25,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "delete_file",
+  "version": "24",
+  "agent": "coord_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 1.17,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "add_user",
+  "version": "24",
+  "agent": "coord_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 1.66,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "create_group",
+  "version": "24",
+  "agent": "coord_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 1.29,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "change_display_name",
+  "version": "24",
+  "agent": "coord_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 1.12,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "create_folder",
+  "version": "25",
+  "agent": "coord_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 1.87,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "rename_file",
+  "version": "25",
+  "agent": "coord_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 2.27,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "favorite_file",
+  "version": "25",
+  "agent": "coord_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 1.74,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "delete_file",
+  "version": "25",
+  "agent": "coord_replay",
+  "success": false,
+  "halted": null,
+  "seconds": 1.24,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "add_user",
+  "version": "25",
+  "agent": "coord_replay",
+  "success": false,
+  "halted": null,
+  "seconds": 2.07,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "create_group",
+  "version": "25",
+  "agent": "coord_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 1.51,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "change_display_name",
+  "version": "25",
+  "agent": "coord_replay",
+  "success": false,
+  "halted": null,
+  "seconds": 1.01,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "create_folder",
+  "version": "24",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 1.79,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "rename_file",
+  "version": "24",
+  "agent": "selector_replay",
+  "success": false,
+  "halted": "selector_not_found",
+  "seconds": 1.28,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": false,
+    "halted": "selector_not_found",
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "favorite_file",
+  "version": "24",
+  "agent": "selector_replay",
+  "success": false,
+  "halted": null,
+  "seconds": 1.57,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "delete_file",
+  "version": "24",
+  "agent": "selector_replay",
+  "success": false,
+  "halted": null,
+  "seconds": 1.32,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "add_user",
+  "version": "24",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 1.85,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "create_group",
+  "version": "24",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 1.33,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "change_display_name",
+  "version": "24",
+  "agent": "selector_replay",
+  "success": false,
+  "halted": null,
+  "seconds": 0.95,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "create_folder",
+  "version": "25",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 1.8,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "rename_file",
+  "version": "25",
+  "agent": "selector_replay",
+  "success": false,
+  "halted": "selector_not_found",
+  "seconds": 1.21,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": false,
+    "halted": "selector_not_found",
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "favorite_file",
+  "version": "25",
+  "agent": "selector_replay",
+  "success": false,
+  "halted": null,
+  "seconds": 1.26,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "delete_file",
+  "version": "25",
+  "agent": "selector_replay",
+  "success": false,
+  "halted": null,
+  "seconds": 1.33,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "add_user",
+  "version": "25",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 1.88,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "create_group",
+  "version": "25",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 1.84,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "change_display_name",
+  "version": "25",
+  "agent": "selector_replay",
+  "success": false,
+  "halted": "selector_not_found",
+  "seconds": 0.41,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": false,
+    "halted": "selector_not_found",
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ }
+]

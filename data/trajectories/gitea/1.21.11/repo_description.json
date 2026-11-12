@@ -1,0 +1,184 @@
+{
+ "task": "repo_description",
+ "version": "1.21.11",
+ "check_passed": true,
+ "steps": [
+  {
+   "idx": 0,
+   "intent": "open repository settings",
+   "action": "click",
+   "value": null,
+   "x": 1197.6953125,
+   "y": 132.8125,
+   "irreversible": false,
+   "anchor": {
+    "tag": "a",
+    "role": "link",
+    "name": "Settings",
+    "text": "Settings",
+    "attrs": {
+     "href": "/vdadmin/demo/settings",
+     "class": "right item"
+    },
+    "bbox": [
+     1147,
+     112,
+     101,
+     41
+    ],
+    "anc": [
+     "|||tabular",
+     "|||header",
+     "main|vdadmin/demo||"
+    ],
+    "i": 30,
+    "center": [
+     1197.5,
+     132.5
+    ],
+    "neighbours": [
+     "You cannot fork a repository you own.",
+     "Fork",
+     "0",
+     "0"
+    ]
+   },
+   "selector": {
+    "css": "a[href=\"/vdadmin/demo/settings\"]",
+    "role": "link",
+    "name": "Settings"
+   },
+   "effect": {
+    "url_changed": true,
+    "path": "/vdadmin/demo/settings",
+    "appeared": [
+     "add push mirror",
+     "authorization",
+     "avatar",
+     "branches",
+     "choose new avatar",
+     "collaborators",
+     "delete current avatar",
+     "deploy keys",
+     "description",
+     "git remote repository url"
+    ],
+    "disappeared": [
+     "0 tags",
+     "1 branch",
+     "1 commit",
+     "about software",
+     "add file",
+     "api",
+     "copy url",
+     "english",
+     "fc7c25e5d9",
+     "footer"
+    ]
+   }
+  },
+  {
+   "idx": 1,
+   "intent": "type description",
+   "action": "type",
+   "value": "versiondrift description",
+   "x": 768.0,
+   "y": 454.46875,
+   "irreversible": false,
+   "anchor": {
+    "tag": "textarea",
+    "role": "textbox",
+    "name": "Description",
+    "text": "",
+    "attrs": {
+     "id": "description",
+     "name": "description"
+    },
+    "bbox": [
+     302,
+     425,
+     932,
+     60
+    ],
+    "anc": [
+     "||form|form",
+     "main|Repository||"
+    ],
+    "i": 46,
+    "center": [
+     768.0,
+     455.0
+    ],
+    "neighbours": [
+     "Website",
+     "Website",
+     "Repository Name",
+     "Repository Name"
+    ]
+   },
+   "selector": {
+    "css": "#description",
+    "role": "textbox",
+    "name": "Description"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/vdadmin/demo/settings",
+    "appeared": [],
+    "disappeared": []
+   }
+  },
+  {
+   "idx": 2,
+   "intent": "save settings",
+   "action": "click",
+   "value": null,
+   "x": 376.7890625,
+   "y": 593.375,
+   "irreversible": false,
+   "anchor": {
+    "tag": "button",
+    "role": "button",
+    "name": "Update Settings",
+    "text": "Update Settings",
+    "attrs": {
+     "class": "ui primary button"
+    },
+    "bbox": [
+     302,
+     574,
+     150,
+     38
+    ],
+    "anc": [
+     "||form|form",
+     "main|Repository||"
+    ],
+    "i": 49,
+    "center": [
+     377.0,
+     593.0
+    ],
+    "neighbours": [
+     "Choose new avatar",
+     "Update Avatar",
+     "Delete Current Avatar",
+     "Visibility"
+    ]
+   },
+   "selector": {
+    "css": null,
+    "role": "button",
+    "name": "Update Settings"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/vdadmin/demo/settings",
+    "appeared": [],
+    "disappeared": [
+     "add push mirror"
+    ]
+   }
+  }
+ ]
+}

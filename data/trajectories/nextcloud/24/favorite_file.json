@@ -1,0 +1,125 @@
+{
+ "task": "favorite_file",
+ "version": "24",
+ "check_passed": true,
+ "steps": [
+  {
+   "idx": 0,
+   "intent": "open file actions",
+   "action": "click",
+   "value": null,
+   "x": 1041.6875,
+   "y": 669.5,
+   "irreversible": false,
+   "anchor": {
+    "tag": "a",
+    "role": "link",
+    "name": "Actions",
+    "text": "Actions",
+    "attrs": {
+     "href": "#",
+     "class": "action action-menu permanent"
+    },
+    "bbox": [
+     1020,
+     643,
+     44,
+     53
+    ],
+    "anc": [
+     "main|||"
+    ],
+    "i": 58,
+    "center": [
+     1042.0,
+     669.5
+    ],
+    "neighbours": [
+     "Share",
+     "Share",
+     "Share",
+     "Share"
+    ]
+   },
+   "selector": {
+    "css": "a[href=\"#\"]",
+    "role": "link",
+    "name": "Actions"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/index.php/apps/files/",
+    "appeared": [
+     "add to favorites",
+     "delete file",
+     "details",
+     "download",
+     "move or copy",
+     "rename"
+    ],
+    "disappeared": []
+   }
+  },
+  {
+   "idx": 1,
+   "intent": "add to favorites",
+   "action": "click",
+   "value": null,
+   "x": 973.4375,
+   "y": 712.0,
+   "irreversible": false,
+   "anchor": {
+    "tag": "a",
+    "role": "link",
+    "name": "Add to favorites",
+    "text": "Add to favorites",
+    "attrs": {
+     "href": "#",
+     "class": "menuitem action action-favorite permanent"
+    },
+    "bbox": [
+     888,
+     690,
+     171,
+     44
+    ],
+    "anc": [
+     "|||menu",
+     "main|||"
+    ],
+    "i": 59,
+    "center": [
+     973.5,
+     712.0
+    ],
+    "neighbours": [
+     "Details",
+     "Share",
+     "Actions",
+     "Rename"
+    ]
+   },
+   "selector": {
+    "css": "a[href=\"#\"]",
+    "role": "link",
+    "name": "Add to favorites"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/index.php/apps/files/",
+    "appeared": [
+     "favorited notes .txt share actions"
+    ],
+    "disappeared": [
+     "add to favorites",
+     "delete file",
+     "details",
+     "download",
+     "move or copy",
+     "not favorited notes .txt share actions",
+     "rename"
+    ]
+   }
+  }
+ ]
+}

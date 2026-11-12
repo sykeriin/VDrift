@@ -1,0 +1,990 @@
+[
+ {
+  "task": "create_folder",
+  "version": "24",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 2.23,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "rename_file",
+  "version": "24",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 1.86,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "favorite_file",
+  "version": "24",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 1.22,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "delete_file",
+  "version": "24",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 1.2,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "add_user",
+  "version": "24",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 1.89,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "create_group",
+  "version": "24",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 1.3,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "change_display_name",
+  "version": "24",
+  "agent": "similo_replay",
+  "success": false,
+  "halted": null,
+  "seconds": 1.11,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "create_folder",
+  "version": "25",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 1.73,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.7922971718205797,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.9961296849168348,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 0.8839431961625652,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "rename_file",
+  "version": "25",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 2.72,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.9955002295742674,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.9945359930544676,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 0.9108296142807825,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "favorite_file",
+  "version": "25",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 1.59,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.9955002295742674,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.9945359930544676,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "delete_file",
+  "version": "25",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 1.76,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.9955002295742674,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.9856080543645568,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "add_user",
+  "version": "25",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 1.75,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.9148836205449351,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.9617857142857142,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 0.9982142857142857,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "score": 0.9966666666666667,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "create_group",
+  "version": "25",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 1.34,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.9963618612287313,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.9327478417732045,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "change_display_name",
+  "version": "25",
+  "agent": "similo_replay",
+  "success": false,
+  "halted": null,
+  "seconds": 1.72,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.6982455413940477,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "create_folder",
+  "version": "24",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 1.92,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "rename_file",
+  "version": "24",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 1.76,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "favorite_file",
+  "version": "24",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 1.83,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "delete_file",
+  "version": "24",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 1.23,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "add_user",
+  "version": "24",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 1.72,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "create_group",
+  "version": "24",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 1.28,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "change_display_name",
+  "version": "24",
+  "agent": "similo_noattr",
+  "success": false,
+  "halted": null,
+  "seconds": 0.91,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->24",
+  "app": "nextcloud"
+ },
+ {
+  "task": "create_folder",
+  "version": "25",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 1.85,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.6736098414323394,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.9939180762978834,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 0.988872191365772,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "rename_file",
+  "version": "25",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 1.78,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.9929289321881346,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.9914137033713063,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 0.9912444214211737,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "favorite_file",
+  "version": "25",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 1.33,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.9929289321881346,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.9914137033713063,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "delete_file",
+  "version": "25",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 1.22,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.9929289321881346,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.9773840854300178,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "add_user",
+  "version": "25",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 2.2,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.9969433495056029,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.99125,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 0.99375,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "score": 0.9942857142857143,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "create_group",
+  "version": "25",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 1.31,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.9942829247880064,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.990495683546409,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ },
+ {
+  "task": "change_display_name",
+  "version": "25",
+  "agent": "similo_noattr",
+  "success": false,
+  "halted": null,
+  "seconds": 1.01,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.9956138534851193,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null
+   }
+  ],
+  "source_version": "24",
+  "pair": "24->25",
+  "app": "nextcloud"
+ }
+]

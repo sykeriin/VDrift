@@ -1,0 +1,264 @@
+{
+ "task": "create_repo",
+ "version": "1.19.4",
+ "check_passed": true,
+ "steps": [
+  {
+   "idx": 0,
+   "intent": "open create menu",
+   "action": "click",
+   "value": null,
+   "x": 1163.09375,
+   "y": 28.0859375,
+   "irreversible": false,
+   "anchor": {
+    "tag": "div",
+    "role": "menu",
+    "name": "Create\u2026",
+    "text": "Create\u2026",
+    "attrs": {
+     "class": "ui dropdown jump item tooltip gt-mx-0"
+    },
+    "bbox": [
+     1132,
+     9,
+     62,
+     38
+    ],
+    "anc": [
+     "|||menu",
+     "|Navigation Bar|nav|",
+     "|||menu"
+    ],
+    "i": 8,
+    "center": [
+     1163.0,
+     28.0
+    ],
+    "neighbours": [
+     "Notifications",
+     "0",
+     "Profile and Settings\u2026",
+     "Organization"
+    ]
+   },
+   "selector": {
+    "css": null,
+    "role": "menu",
+    "name": "Create\u2026"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/",
+    "appeared": [
+     "new migration",
+     "new organization",
+     "new repository new migration new organization"
+    ],
+    "disappeared": [
+     "organization"
+    ]
+   }
+  },
+  {
+   "idx": 1,
+   "intent": "new repository",
+   "action": "click",
+   "value": null,
+   "x": 1108.125,
+   "y": 72.2578125,
+   "irreversible": false,
+   "anchor": {
+    "tag": "a",
+    "role": "menuitem",
+    "name": "New Repository",
+    "text": "New Repository",
+    "attrs": {
+     "id": "_aria_auto_id_1",
+     "href": "/repo/create",
+     "class": "item"
+    },
+    "bbox": [
+     1023,
+     53,
+     170,
+     38
+    ],
+    "anc": [
+     "|||menu",
+     "menu|Create\u2026||dropdown",
+     "|||menu",
+     "|Navigation Bar|nav|",
+     "|||menu"
+    ],
+    "i": 10,
+    "center": [
+     1108.0,
+     72.0
+    ],
+    "neighbours": [
+     "New Migration",
+     "New Repository New Migration New Organization",
+     "Notifications",
+     "0"
+    ]
+   },
+   "selector": {
+    "css": "#_aria_auto_id_1",
+    "role": "menuitem",
+    "name": "New Repository"
+   },
+   "effect": {
+    "url_changed": true,
+    "path": "/repo/create",
+    "appeared": [
+     ".gitignore",
+     "choose a license.",
+     "create repository",
+     "default",
+     "default branch",
+     "default trust model",
+     "description",
+     "initialize repository (adds .gitignore, license and readme)",
+     "issue labels",
+     "license"
+    ],
+    "disappeared": [
+     "all 0",
+     "archived private",
+     "collaborative",
+     "find a repository\u2026",
+     "forks",
+     "mirrors",
+     "new migration",
+     "new organization",
+     "new repository new migration new organization",
+     "repository"
+    ]
+   }
+  },
+  {
+   "idx": 2,
+   "intent": "type repo name",
+   "action": "type",
+   "value": "ledger",
+   "x": 712.078125,
+   "y": 286.71875,
+   "irreversible": false,
+   "anchor": {
+    "tag": "input",
+    "role": "textbox",
+    "name": "Repository Name",
+    "text": "",
+    "attrs": {
+     "id": "repo_name",
+     "name": "repo_name"
+    },
+    "bbox": [
+     519,
+     268,
+     386,
+     38
+    ],
+    "anc": [
+     "||form|form",
+     "main|New Repository||"
+    ],
+    "i": 15,
+    "center": [
+     712.0,
+     287.0
+    ],
+    "neighbours": [
+     "vdadmin",
+     "Make Repository Private",
+     "Description",
+     "Migrate repository."
+    ]
+   },
+   "selector": {
+    "css": "#repo_name",
+    "role": "textbox",
+    "name": "Repository Name"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/repo/create",
+    "appeared": [],
+    "disappeared": []
+   }
+  },
+  {
+   "idx": 3,
+   "intent": "create repository",
+   "action": "click",
+   "value": null,
+   "x": 600.5234375,
+   "y": 1434.453125,
+   "irreversible": false,
+   "anchor": {
+    "tag": "button",
+    "role": "button",
+    "name": "Create Repository",
+    "text": "Create Repository",
+    "attrs": {
+     "class": "ui green button"
+    },
+    "bbox": [
+     519,
+     1415,
+     163,
+     38
+    ],
+    "anc": [
+     "||form|form",
+     "main|New Repository||"
+    ],
+    "i": 37,
+    "center": [
+     600.5,
+     1434.0
+    ],
+    "neighbours": [
+     "Make repository a template",
+     "Template",
+     "Default Trust Model",
+     "Signature Trust Model"
+    ]
+   },
+   "selector": {
+    "css": null,
+    "role": "button",
+    "name": "Create Repository"
+   },
+   "effect": {
+    "url_changed": true,
+    "path": "/vdadmin/ledger",
+    "appeared": [
+     "clone this repository need help cloning? visit help. http",
+     "code",
+     "copy url",
+     "creating a new repository on the command line touch readme.md git init git check",
+     "help",
+     "http",
+     "ledger",
+     "packages",
+     "projects",
+     "pushing an existing repository from the command line git remote add origin http:"
+    ],
+    "disappeared": [
+     ".gitignore",
+     "choose a license.",
+     "create repository",
+     "default",
+     "default branch",
+     "default trust model",
+     "description",
+     "initialize repository (adds .gitignore, license and readme)",
+     "issue labels",
+     "license"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,55 @@
+== same-version sanity (trajectory replayed on its own version; baseline must be ~100%) ==
+  coord_replay         7/7
+  reground             5/7
+  reground_cont_off    6/7
+  reground_noguard     6/7
+  reground_noguard_off 7/7
+  reground_off         7/7
+  selector_replay      3/7
+  similo_noattr        6/7
+  similo_noattr_off    6/7
+  similo_off           6/7
+  similo_replay        6/7
+
+== A-memory replayed on a newer version: success by pair ==
+  agent               24>25        pooled
+  coord_replay        4/7            4/7
+  reground            6/7            6/7
+  reground_cont       7/7            7/7
+  reground_cont_off   6/7            6/7
+  reground_noctx      3/7            3/7
+  reground_noguard    7/7            7/7
+  reground_noguard_off6/7            6/7
+  reground_off        6/7            6/7
+  selector_replay     3/7            3/7
+  similo_noattr       6/7            6/7
+  similo_noattr_off   6/7            6/7
+  similo_off          6/7            6/7
+  similo_replay       6/7            6/7
+
+== pooled success by task change type (worst step in task) ==
+  cosmetic              coord_replay:1/3  reground:3/3  reground_cont:3/3  reground_cont_off:2/3  reground_noctx:1/3  reground_noguard:3/3  reground_noguard_off:2/3  reground_off:2/3  selector_replay:2/3  similo_noattr:2/3  similo_noattr_off:2/3  similo_off:2/3  similo_replay:2/3
+  relocation            coord_replay:2/3  reground:2/3  reground_cont:3/3  reground_cont_off:3/3  reground_noctx:2/3  reground_noguard:3/3  reground_noguard_off:3/3  reground_off:3/3  selector_replay:0/3  similo_noattr:3/3  similo_noattr_off:3/3  similo_off:3/3  similo_replay:3/3
+  rename                coord_replay:1/1  reground:1/1  reground_cont:1/1  reground_cont_off:1/1  reground_noctx:0/1  reground_noguard:1/1  reground_noguard_off:1/1  reground_off:1/1  selector_replay:1/1  similo_noattr:1/1  similo_noattr_off:1/1  similo_off:1/1  similo_replay:1/1
+  workflow_restructure   (no tasks)
+
+== paired comparisons on pooled (pair,task) units: diff = first - second, 95% bootstrap CI, exact McNemar p ==
+  reground - similo_replay: +0.000 [-0.429, +0.429] n=7  only-first=1 only-second=1 p=1.000
+  reground - similo_noattr: +0.000 [-0.429, +0.429] n=7  only-first=1 only-second=1 p=1.000
+  reground_noguard - similo_replay: +0.143 [+0.000, +0.429] n=7  only-first=1 only-second=0 p=1.000
+  reground - coord_replay: +0.286 [-0.286, +0.714] n=7  only-first=3 only-second=1 p=0.625
+  reground - selector_replay: +0.429 [+0.143, +0.857] n=7  only-first=3 only-second=0 p=0.250
+  similo_replay - coord_replay: +0.286 [+0.000, +0.571] n=7  only-first=2 only-second=0 p=0.500
+  reground - reground_noguard: -0.143 [-0.429, +0.000] n=7  only-first=0 only-second=1 p=1.000
+  reground - reground_noctx: +0.429 [+0.143, +0.857] n=7  only-first=3 only-second=0 p=0.250
+
+== ReGround internals (A->B steps) ==
+  reground             tiers={'T0': 4, 'cached': 13, 'key': 4} halts={'effect_mismatch': 1} staleness={'tp': 1, 'fp': 3, 'fn': 0, 'tn': 13, 'precision': 0.25, 'recall': 1.0}
+  reground_cont        tiers={'cached': 14, 'T0': 3, 'key': 4} halts={} staleness={'tp': 1, 'fp': 2, 'fn': 0, 'tn': 14, 'precision': 0.333, 'recall': 1.0}
+  reground_cont_off    tiers={'cached': 14, 'T0': 3, 'key': 4} halts={} staleness={'tp': 1, 'fp': 2, 'fn': 0, 'tn': 14, 'precision': 0.333, 'recall': 1.0}
+  reground_noctx       tiers={'T0': 2, 'cached': 13, 'needs_model': 2, 'key': 2} halts={'no_candidate': 2} staleness={'tp': 1, 'fp': 3, 'fn': 0, 'tn': 13, 'precision': 0.25, 'recall': 1.0}
+  reground_noguard     tiers={'T0': 4, 'cached': 13, 'key': 4} halts={} staleness={'tp': 1, 'fp': 3, 'fn': 0, 'tn': 13, 'precision': 0.25, 'recall': 1.0}
+  reground_noguard_off tiers={'T0': 4, 'cached': 13, 'key': 4} halts={} staleness={'tp': 1, 'fp': 3, 'fn': 0, 'tn': 13, 'precision': 0.25, 'recall': 1.0}
+  reground_off         tiers={'T0': 4, 'cached': 13, 'key': 4} halts={} staleness={'tp': 1, 'fp': 3, 'fn': 0, 'tn': 13, 'precision': 0.25, 'recall': 1.0}
+
+== wrong irreversible clicks (executed off-target) == {'coord_replay': 1, 'selector_replay': 1}

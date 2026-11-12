@@ -1,0 +1,241 @@
+{
+ "task": "add_collaborator",
+ "version": "1.19.4",
+ "check_passed": true,
+ "steps": [
+  {
+   "idx": 0,
+   "intent": "open collaborators",
+   "action": "click",
+   "value": null,
+   "x": 497.84375,
+   "y": 204.5,
+   "irreversible": false,
+   "anchor": {
+    "tag": "a",
+    "role": "link",
+    "name": "Collaborators",
+    "text": "Collaborators",
+    "attrs": {
+     "href": "/vdadmin/demo/settings/collaboration",
+     "class": "item"
+    },
+    "bbox": [
+     437,
+     185,
+     121,
+     40
+    ],
+    "anc": [
+     "|||menu",
+     "|||tabular",
+     "main|Repository||"
+    ],
+    "i": 34,
+    "center": [
+     497.5,
+     205.0
+    ],
+    "neighbours": [
+     "Projects",
+     "Packages",
+     "Branches",
+     "Repository"
+    ]
+   },
+   "selector": {
+    "css": "a[href=\"/vdadmin/demo/settings/collaboration\"]",
+    "role": "link",
+    "name": "Collaborators"
+   },
+   "effect": {
+    "url_changed": true,
+    "path": "/vdadmin/demo/settings/collaboration",
+    "appeared": [
+     "about software",
+     "add collaborator",
+     "api",
+     "english",
+     "footer",
+     "licenses",
+     "links",
+     "powered by gitea",
+     "search user\u2026"
+    ],
+    "disappeared": [
+     "authorization",
+     "avatar",
+     "choose new avatar",
+     "delete current avatar",
+     "description",
+     "git remote repository url",
+     "how do i mirror repositories?",
+     "make repository a template",
+     "make repository private",
+     "mirror interval (valid time units are 'h', 'm', 's'). 0 to disable periodic sync"
+    ]
+   }
+  },
+  {
+   "idx": 1,
+   "intent": "type collaborator",
+   "action": "type",
+   "value": "alice",
+   "x": 221.5,
+   "y": 313.28125,
+   "irreversible": false,
+   "anchor": {
+    "tag": "input",
+    "role": "textbox",
+    "name": "Search user\u2026",
+    "text": "",
+    "attrs": {
+     "name": "collaborator",
+     "placeholder": "Search user\u2026",
+     "class": "prompt"
+    },
+    "bbox": [
+     98,
+     294,
+     248,
+     38
+    ],
+    "anc": [
+     "||form|form",
+     "main|Collaborators||"
+    ],
+    "i": 39,
+    "center": [
+     222.0,
+     313.0
+    ],
+    "neighbours": [
+     "Issues",
+     "Pull Requests",
+     "Repository",
+     "Code"
+    ]
+   },
+   "selector": {
+    "css": "input[name=\"collaborator\"]",
+    "role": "textbox",
+    "name": "Search user\u2026"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/vdadmin/demo/settings/collaboration",
+    "appeared": [
+     "alice"
+    ],
+    "disappeared": []
+   }
+  },
+  {
+   "idx": 2,
+   "intent": "pick suggestion",
+   "action": "click",
+   "value": null,
+   "x": 223.5,
+   "y": 359.5859375,
+   "irreversible": false,
+   "anchor": {
+    "tag": "a",
+    "role": "link",
+    "name": "alice",
+    "text": "alice",
+    "attrs": {
+     "class": "result"
+    },
+    "bbox": [
+     99,
+     333,
+     250,
+     53
+    ],
+    "anc": [
+     "||form|form",
+     "main|Collaborators||"
+    ],
+    "i": 40,
+    "center": [
+     224.0,
+     359.5
+    ],
+    "neighbours": [
+     "Search user\u2026",
+     "Add Collaborator",
+     "Issues",
+     "Repository"
+    ]
+   },
+   "selector": {
+    "css": null,
+    "role": "link",
+    "name": "alice"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/vdadmin/demo/settings/collaboration",
+    "appeared": [],
+    "disappeared": [
+     "alice"
+    ]
+   }
+  },
+  {
+   "idx": 3,
+   "intent": "add collaborator",
+   "action": "click",
+   "value": null,
+   "x": 428.609375,
+   "y": 313.78125,
+   "irreversible": false,
+   "anchor": {
+    "tag": "button",
+    "role": "button",
+    "name": "Add Collaborator",
+    "text": "Add Collaborator",
+    "attrs": {
+     "class": "ui green button"
+    },
+    "bbox": [
+     351,
+     295,
+     156,
+     38
+    ],
+    "anc": [
+     "||form|form",
+     "main|Collaborators||"
+    ],
+    "i": 40,
+    "center": [
+     429.0,
+     314.0
+    ],
+    "neighbours": [
+     "Repository",
+     "Collaborators",
+     "Packages",
+     "Pull Requests"
+    ]
+   },
+   "selector": {
+    "css": null,
+    "role": "button",
+    "name": "Add Collaborator"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/vdadmin/demo/settings/collaboration",
+    "appeared": [
+     "alice",
+     "alice write remove",
+     "remove",
+     "write"
+    ],
+    "disappeared": []
+   }
+  }
+ ]
+}

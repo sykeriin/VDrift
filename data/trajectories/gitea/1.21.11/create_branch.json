@@ -1,0 +1,183 @@
+{
+ "task": "create_branch",
+ "version": "1.21.11",
+ "check_passed": true,
+ "steps": [
+  {
+   "idx": 0,
+   "intent": "open branch menu",
+   "action": "click",
+   "value": null,
+   "x": 80.25,
+   "y": 264.609375,
+   "irreversible": false,
+   "anchor": {
+    "tag": "button",
+    "role": "button",
+    "name": "main",
+    "text": "main",
+    "attrs": {
+     "class": "branch-dropdown-button gt-ellipsis ui basic small compact button gt-df gt-m-0"
+    },
+    "bbox": [
+     32,
+     250,
+     97,
+     30
+    ],
+    "anc": [
+     "|||dropdown",
+     "main|vdadmin/demo||"
+    ],
+    "i": 36,
+    "center": [
+     80.5,
+     265.0
+    ],
+    "neighbours": [
+     "vdadmin",
+     "Manage Topics",
+     "New Pull Request",
+     "README.md"
+    ]
+   },
+   "selector": {
+    "css": null,
+    "role": "button",
+    "name": "main"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/vdadmin/demo",
+    "appeared": [
+     "branches",
+     "filter branch or tag...",
+     "main default",
+     "tags"
+    ],
+    "disappeared": [
+     "7527212bdd",
+     "readme.md"
+    ]
+   }
+  },
+  {
+   "idx": 1,
+   "intent": "type branch name",
+   "action": "type",
+   "value": "release-1",
+   "x": 179.6796875,
+   "y": 311.609375,
+   "irreversible": false,
+   "anchor": {
+    "tag": "input",
+    "role": "textbox",
+    "name": "Filter branch or tag...",
+    "text": "",
+    "attrs": {
+     "name": "search",
+     "placeholder": "Filter branch or tag..."
+    },
+    "bbox": [
+     44,
+     297,
+     271,
+     30
+    ],
+    "anc": [
+     "|||menu",
+     "|||dropdown",
+     "main|vdadmin/demo||"
+    ],
+    "i": 37,
+    "center": [
+     179.5,
+     312.0
+    ],
+    "neighbours": [
+     "Tags",
+     "New Pull Request",
+     "Go to file",
+     "1 Commit"
+    ]
+   },
+   "selector": {
+    "css": "input[name=\"search\"]",
+    "role": "textbox",
+    "name": "Filter branch or tag..."
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/vdadmin/demo",
+    "appeared": [
+     "create branch release-1 from \"main\""
+    ],
+    "disappeared": [
+     "main default"
+    ]
+   }
+  },
+  {
+   "idx": 2,
+   "intent": "create branch",
+   "action": "click",
+   "value": null,
+   "x": 179.6796875,
+   "y": 399.59375,
+   "irreversible": false,
+   "anchor": {
+    "tag": "a",
+    "role": "link",
+    "name": "Create branch release-1 from \"main\"",
+    "text": "Create branch release-1 from \"main\"",
+    "attrs": {
+     "href": "#"
+    },
+    "bbox": [
+     49,
+     392,
+     261,
+     30
+    ],
+    "anc": [
+     "|||menu",
+     "|||menu",
+     "|||dropdown",
+     "main|vdadmin/demo||"
+    ],
+    "i": 41,
+    "center": [
+     179.5,
+     407.0
+    ],
+    "neighbours": [
+     "Tags",
+     "Filter branch or tag...",
+     "Branches",
+     "New Pull Request"
+    ]
+   },
+   "selector": {
+    "css": "a[href=\"#\"]",
+    "role": "link",
+    "name": "Create branch release-1 from \"main\""
+   },
+   "effect": {
+    "url_changed": true,
+    "path": "/vdadmin/demo/src/branch/release-1/",
+    "appeared": [
+     "7527212bdd",
+     "readme.md",
+     "release-1"
+    ],
+    "disappeared": [
+     "branches",
+     "create branch release-1 from \"main\"",
+     "filter branch or tag...",
+     "main",
+     "tags"
+    ]
+   }
+  }
+ ]
+}

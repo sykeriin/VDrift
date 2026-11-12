@@ -1,0 +1,198 @@
+{
+ "task": "rename_file",
+ "version": "25",
+ "check_passed": true,
+ "steps": [
+  {
+   "idx": 0,
+   "intent": "open file actions",
+   "action": "click",
+   "value": null,
+   "x": 1027.765625,
+   "y": 683.5,
+   "irreversible": false,
+   "anchor": {
+    "tag": "a",
+    "role": "link",
+    "name": "Actions",
+    "text": "Actions",
+    "attrs": {
+     "href": "#",
+     "class": "action action-menu permanent"
+    },
+    "bbox": [
+     1006,
+     657,
+     44,
+     53
+    ],
+    "anc": [
+     "||main|"
+    ],
+    "i": 61,
+    "center": [
+     1028.0,
+     683.5
+    ],
+    "neighbours": [
+     "Share",
+     "Share",
+     "Share",
+     "Share"
+    ]
+   },
+   "selector": {
+    "css": "a[href=\"#\"]",
+    "role": "link",
+    "name": "Actions"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/index.php/apps/files/",
+    "appeared": [
+     "add to favorites",
+     "delete file",
+     "details",
+     "download",
+     "edit locally",
+     "move or copy",
+     "rename"
+    ],
+    "disappeared": []
+   }
+  },
+  {
+   "idx": 1,
+   "intent": "rename",
+   "action": "click",
+   "value": null,
+   "x": 956.515625,
+   "y": 817.0,
+   "irreversible": false,
+   "anchor": {
+    "tag": "a",
+    "role": "link",
+    "name": "Rename",
+    "text": "Rename",
+    "attrs": {
+     "href": "#",
+     "class": "menuitem action action-rename permanent"
+    },
+    "bbox": [
+     871,
+     795,
+     171,
+     44
+    ],
+    "anc": [
+     "|||menu",
+     "||main|"
+    ],
+    "i": 64,
+    "center": [
+     956.5,
+     817.0
+    ],
+    "neighbours": [
+     "Details",
+     "Move or copy",
+     "Add to favorites",
+     "Edit locally"
+    ]
+   },
+   "selector": {
+    "css": "a[href=\"#\"]",
+    "role": "link",
+    "name": "Rename"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/index.php/apps/files/",
+    "appeared": [],
+    "disappeared": [
+     "add to favorites",
+     "delete file",
+     "details",
+     "download",
+     "edit locally",
+     "move or copy",
+     "not favorited notes .txt share actions",
+     "rename"
+    ]
+   }
+  },
+  {
+   "idx": 2,
+   "intent": "type new name",
+   "action": "type",
+   "value": "meeting-notes.txt",
+   "x": 648.765625,
+   "y": 683.0,
+   "irreversible": false,
+   "anchor": {
+    "tag": "input",
+    "role": "textbox",
+    "name": "",
+    "text": "",
+    "attrs": {
+     "type": "text",
+     "class": "filename focus-visible"
+    },
+    "bbox": [
+     407,
+     665,
+     484,
+     36
+    ],
+    "anc": [
+     "||form|",
+     "||main|"
+    ],
+    "i": 59,
+    "center": [
+     649.0,
+     683.0
+    ],
+    "neighbours": [
+     "Not favorited Nextcloud Manual .pdf Share Actions",
+     "Not favorited Reasons to use Nextcloud .pdf Share Actions",
+     "Not favorited Nextcloud intro .mp4 Share Actions",
+     "Not favorited Nextcloud .png Share Actions"
+    ]
+   },
+   "selector": {
+    "css": null,
+    "role": "textbox",
+    "name": ""
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/index.php/apps/files/",
+    "appeared": [],
+    "disappeared": []
+   }
+  },
+  {
+   "idx": 3,
+   "intent": "confirm",
+   "action": "key",
+   "value": "Enter",
+   "x": null,
+   "y": null,
+   "irreversible": false,
+   "anchor": null,
+   "selector": null,
+   "effect": {
+    "url_changed": false,
+    "path": "/index.php/apps/files/",
+    "appeared": [
+     "not favorited meeting-notes .txt share actions",
+     "select file \"meeting-notes.txt\""
+    ],
+    "disappeared": [
+     "select file \"notes.txt\""
+    ]
+   }
+  }
+ ]
+}

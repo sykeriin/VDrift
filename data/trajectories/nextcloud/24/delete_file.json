@@ -1,0 +1,123 @@
+{
+ "task": "delete_file",
+ "version": "24",
+ "check_passed": true,
+ "steps": [
+  {
+   "idx": 0,
+   "intent": "open file actions",
+   "action": "click",
+   "value": null,
+   "x": 1041.6875,
+   "y": 669.5,
+   "irreversible": false,
+   "anchor": {
+    "tag": "a",
+    "role": "link",
+    "name": "Actions",
+    "text": "Actions",
+    "attrs": {
+     "href": "#",
+     "class": "action action-menu permanent"
+    },
+    "bbox": [
+     1020,
+     643,
+     44,
+     53
+    ],
+    "anc": [
+     "main|||"
+    ],
+    "i": 58,
+    "center": [
+     1042.0,
+     669.5
+    ],
+    "neighbours": [
+     "Share",
+     "Share",
+     "Share",
+     "Share"
+    ]
+   },
+   "selector": {
+    "css": "a[href=\"#\"]",
+    "role": "link",
+    "name": "Actions"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/index.php/apps/files/",
+    "appeared": [
+     "add to favorites",
+     "delete file",
+     "details",
+     "download",
+     "move or copy",
+     "rename"
+    ],
+    "disappeared": []
+   }
+  },
+  {
+   "idx": 1,
+   "intent": "delete",
+   "action": "click",
+   "value": null,
+   "x": 973.4375,
+   "y": 932.0,
+   "irreversible": true,
+   "anchor": {
+    "tag": "a",
+    "role": "link",
+    "name": "Delete file",
+    "text": "Delete file",
+    "attrs": {
+     "href": "#",
+     "class": "menuitem action action-delete permanent"
+    },
+    "bbox": [
+     888,
+     910,
+     171,
+     44
+    ],
+    "anc": [
+     "|||menu",
+     "main|||"
+    ],
+    "i": 64,
+    "center": [
+     973.5,
+     932.0
+    ],
+    "neighbours": [
+     "Download",
+     "Move or copy",
+     "Rename",
+     "Details"
+    ]
+   },
+   "selector": {
+    "css": "a[href=\"#\"]",
+    "role": "link",
+    "name": "Delete file"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/index.php/apps/files/",
+    "appeared": [],
+    "disappeared": [
+     "add to favorites",
+     "delete file",
+     "details",
+     "download",
+     "move or copy",
+     "not favorited notes .txt share actions",
+     "rename"
+    ]
+   }
+  }
+ ]
+}

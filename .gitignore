@@ -1,5 +1,8 @@
 __pycache__/
-runs/
 *.pyc
 .venv/
-data/
+*.egg-info/
+# app instances and snapshots are large and regenerable; recorded trajectories are small and are the evidence for the reports
+data/*
+!data/trajectories/
+runs/*.log

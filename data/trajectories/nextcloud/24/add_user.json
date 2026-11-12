@@ -1,0 +1,245 @@
+{
+ "task": "add_user",
+ "version": "24",
+ "check_passed": true,
+ "steps": [
+  {
+   "idx": 0,
+   "intent": "new user",
+   "action": "click",
+   "value": null,
+   "x": 149.5,
+   "y": 79.0,
+   "irreversible": false,
+   "anchor": {
+    "tag": "button",
+    "role": "button",
+    "name": "New user",
+    "text": "New user",
+    "attrs": {
+     "id": "new-user-button",
+     "type": "button",
+     "class": "icon-add"
+    },
+    "bbox": [
+     10,
+     60,
+     279,
+     38
+    ],
+    "anc": [
+     "|||nav",
+     "navigation|||nav"
+    ],
+    "i": 15,
+    "center": [
+     149.5,
+     79.0
+    ],
+    "neighbours": [
+     "Add group",
+     "Files",
+     "Dashboard",
+     "Photos"
+    ]
+   },
+   "selector": {
+    "css": "#new-user-button",
+    "role": "button",
+    "name": "New user"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/index.php/settings/users",
+    "appeared": [
+     "add a new user",
+     "add user to group",
+     "close",
+     "display name",
+     "email",
+     "password",
+     "select user quota",
+     "username"
+    ],
+    "disappeared": [
+     "active users",
+     "activity",
+     "add group",
+     "admins",
+     "avatar of vdadmin, online",
+     "close navigation",
+     "contacts",
+     "dashboard",
+     "edit user",
+     "files"
+    ]
+   }
+  },
+  {
+   "idx": 1,
+   "intent": "type user name",
+   "action": "type",
+   "value": "carol",
+   "x": 638.5,
+   "y": 451.0,
+   "irreversible": false,
+   "anchor": {
+    "tag": "input",
+    "role": "textbox",
+    "name": "Username",
+    "text": "",
+    "attrs": {
+     "id": "newusername",
+     "name": "username",
+     "type": "text",
+     "placeholder": "Username",
+     "class": "modal__item"
+    },
+    "bbox": [
+     464,
+     434,
+     350,
+     34
+    ],
+    "anc": [
+     "||form|modal",
+     "|||modal",
+     "|||modal",
+     "|||modal"
+    ],
+    "i": 2,
+    "center": [
+     639.0,
+     451.0
+    ],
+    "neighbours": [
+     "Display name",
+     "Password",
+     "Email",
+     "Add user to group"
+    ]
+   },
+   "selector": {
+    "css": "#newusername",
+    "role": "textbox",
+    "name": "Username"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/index.php/settings/users",
+    "appeared": [],
+    "disappeared": []
+   }
+  },
+  {
+   "idx": 2,
+   "intent": "type password",
+   "action": "type",
+   "value": "Carol-pass-123!",
+   "x": 638.5,
+   "y": 557.0,
+   "irreversible": false,
+   "anchor": {
+    "tag": "input",
+    "role": "textbox",
+    "name": "Password",
+    "text": "",
+    "attrs": {
+     "id": "newuserpassword",
+     "name": "password",
+     "type": "password",
+     "placeholder": "Password",
+     "class": "modal__item"
+    },
+    "bbox": [
+     464,
+     540,
+     350,
+     34
+    ],
+    "anc": [
+     "||form|modal",
+     "|||modal",
+     "|||modal",
+     "|||modal"
+    ],
+    "i": 4,
+    "center": [
+     639.0,
+     557.0
+    ],
+    "neighbours": [
+     "Display name",
+     "Email",
+     "Add user to group",
+     "Username"
+    ]
+   },
+   "selector": {
+    "css": "#newuserpassword",
+    "role": "textbox",
+    "name": "Password"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/index.php/settings/users",
+    "appeared": [],
+    "disappeared": []
+   }
+  },
+  {
+   "idx": 3,
+   "intent": "add user",
+   "action": "click",
+   "value": null,
+   "x": 639.9921875,
+   "y": 789.0,
+   "irreversible": false,
+   "anchor": {
+    "tag": "button",
+    "role": "button",
+    "name": "Add a new user",
+    "text": "Add a new user",
+    "attrs": {
+     "id": "newsubmit",
+     "type": "submit",
+     "class": "button-vue button-vue--text-only button-vue--vue-primary"
+    },
+    "bbox": [
+     568,
+     767,
+     145,
+     44
+    ],
+    "anc": [
+     "||form|modal",
+     "|||modal",
+     "|||modal",
+     "|||modal"
+    ],
+    "i": 8,
+    "center": [
+     640.5,
+     789.0
+    ],
+    "neighbours": [
+     "Add user to group",
+     "Email",
+     "Select user quota",
+     "Password"
+    ]
+   },
+   "selector": {
+    "css": "#newsubmit",
+    "role": "button",
+    "name": "Add a new user"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/index.php/settings/users",
+    "appeared": [],
+    "disappeared": []
+   }
+  }
+ ]
+}

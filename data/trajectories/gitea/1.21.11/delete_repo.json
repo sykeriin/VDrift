@@ -1,0 +1,189 @@
+{
+ "task": "delete_repo",
+ "version": "1.21.11",
+ "check_passed": true,
+ "steps": [
+  {
+   "idx": 0,
+   "intent": "open delete dialog",
+   "action": "click",
+   "value": null,
+   "x": 1133.84375,
+   "y": 3920.09375,
+   "irreversible": false,
+   "anchor": {
+    "tag": "button",
+    "role": "button",
+    "name": "Delete This Repository",
+    "text": "Delete This Repository",
+    "attrs": {
+     "class": "ui basic red show-modal button"
+    },
+    "bbox": [
+     1037,
+     3901,
+     193,
+     38
+    ],
+    "anc": [
+     "main|Repository||"
+    ],
+    "i": 122,
+    "center": [
+     1133.5,
+     3920.0
+    ],
+    "neighbours": [
+     "Delete Wiki Data",
+     "Archive Repo",
+     "Transfer Ownership",
+     "English"
+    ]
+   },
+   "selector": {
+    "css": null,
+    "role": "button",
+    "name": "Delete This Repository"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/vdadmin/demo/settings",
+    "appeared": [
+     "cancel",
+     "delete repository",
+     "enter the repository name as confirmation: demo"
+    ],
+    "disappeared": [
+     "about software",
+     "access source code, files, commits and branches.",
+     "actions",
+     "activity",
+     "add push mirror",
+     "add to reindex queue",
+     "allow edits from maintainers by default",
+     "alphanumeric abc-123 , defg-234",
+     "api",
+     "archive repo"
+    ]
+   }
+  },
+  {
+   "idx": 1,
+   "intent": "type repo name",
+   "action": "type",
+   "value": "demo",
+   "x": 640.0,
+   "y": 2183.875,
+   "irreversible": false,
+   "anchor": {
+    "tag": "input",
+    "role": "textbox",
+    "name": "Repository Name",
+    "text": "",
+    "attrs": {
+     "id": "repo_name_to_delete",
+     "name": "repo_name"
+    },
+    "bbox": [
+     301,
+     2165,
+     678,
+     38
+    ],
+    "anc": [
+     "||form|form",
+     "|||modal",
+     "|||modal"
+    ],
+    "i": 2,
+    "center": [
+     640.0,
+     2184.0
+    ],
+    "neighbours": [
+     "Enter the repository name as confirmation: demo",
+     "Cancel",
+     "Delete Repository"
+    ]
+   },
+   "selector": {
+    "css": "#repo_name_to_delete",
+    "role": "textbox",
+    "name": "Repository Name"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/vdadmin/demo/settings",
+    "appeared": [],
+    "disappeared": []
+   }
+  },
+  {
+   "idx": 2,
+   "intent": "confirm delete",
+   "action": "click",
+   "value": null,
+   "x": 908.359375,
+   "y": 2234.859375,
+   "irreversible": true,
+   "anchor": {
+    "tag": "button",
+    "role": "button",
+    "name": "Delete Repository",
+    "text": "Delete Repository",
+    "attrs": {
+     "class": "ui red button"
+    },
+    "bbox": [
+     838,
+     2217,
+     141,
+     36
+    ],
+    "anc": [
+     "||form|form",
+     "|||modal",
+     "|||modal"
+    ],
+    "i": 4,
+    "center": [
+     908.5,
+     2235.0
+    ],
+    "neighbours": [
+     "Cancel",
+     "Repository Name",
+     "Repository Name",
+     "Enter the repository name as confirmation: demo"
+    ]
+   },
+   "selector": {
+    "css": null,
+    "role": "button",
+    "name": "Delete Repository"
+   },
+   "effect": {
+    "url_changed": true,
+    "path": "/",
+    "appeared": [
+     "about software",
+     "all 0",
+     "api",
+     "archived private",
+     "collaborative",
+     "create\u2026",
+     "dashboard",
+     "english",
+     "explore",
+     "find a repository\u2026"
+    ],
+    "disappeared": [
+     "cancel",
+     "delete repository",
+     "enter the repository name as confirmation: demo",
+     "repository name"
+    ]
+   }
+  }
+ ]
+}

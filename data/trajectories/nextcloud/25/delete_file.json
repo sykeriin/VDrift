@@ -1,0 +1,126 @@
+{
+ "task": "delete_file",
+ "version": "25",
+ "check_passed": true,
+ "steps": [
+  {
+   "idx": 0,
+   "intent": "open file actions",
+   "action": "click",
+   "value": null,
+   "x": 1027.765625,
+   "y": 683.5,
+   "irreversible": false,
+   "anchor": {
+    "tag": "a",
+    "role": "link",
+    "name": "Actions",
+    "text": "Actions",
+    "attrs": {
+     "href": "#",
+     "class": "action action-menu permanent"
+    },
+    "bbox": [
+     1006,
+     657,
+     44,
+     53
+    ],
+    "anc": [
+     "||main|"
+    ],
+    "i": 61,
+    "center": [
+     1028.0,
+     683.5
+    ],
+    "neighbours": [
+     "Share",
+     "Share",
+     "Share",
+     "Share"
+    ]
+   },
+   "selector": {
+    "css": "a[href=\"#\"]",
+    "role": "link",
+    "name": "Actions"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/index.php/apps/files/",
+    "appeared": [
+     "add to favorites",
+     "delete file",
+     "details",
+     "download",
+     "edit locally",
+     "move or copy",
+     "rename"
+    ],
+    "disappeared": []
+   }
+  },
+  {
+   "idx": 1,
+   "intent": "delete",
+   "action": "click",
+   "value": null,
+   "x": 956.515625,
+   "y": 993.0,
+   "irreversible": true,
+   "anchor": {
+    "tag": "a",
+    "role": "link",
+    "name": "Delete file",
+    "text": "Delete file",
+    "attrs": {
+     "href": "#",
+     "class": "menuitem action action-delete permanent"
+    },
+    "bbox": [
+     871,
+     971,
+     171,
+     44
+    ],
+    "anc": [
+     "|||menu",
+     "||main|"
+    ],
+    "i": 68,
+    "center": [
+     956.5,
+     993.0
+    ],
+    "neighbours": [
+     "Download",
+     "Edit locally",
+     "Move or copy",
+     "Rename"
+    ]
+   },
+   "selector": {
+    "css": "a[href=\"#\"]",
+    "role": "link",
+    "name": "Delete file"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/index.php/apps/files/",
+    "appeared": [],
+    "disappeared": [
+     "add to favorites",
+     "delete file",
+     "details",
+     "download",
+     "edit locally",
+     "move or copy",
+     "not favorited notes .txt share actions",
+     "rename",
+     "select file \"notes.txt\""
+    ]
+   }
+  }
+ ]
+}

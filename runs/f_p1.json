@@ -1,0 +1,1346 @@
+[
+ {
+  "task": "star_repo",
+  "version": "1.17.4",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 3.54,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.17.4",
+  "app": "gitea"
+ },
+ {
+  "task": "repo_description",
+  "version": "1.17.4",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 10.26,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.17.4",
+  "app": "gitea"
+ },
+ {
+  "task": "create_issue",
+  "version": "1.17.4",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.61,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.17.4",
+  "app": "gitea"
+ },
+ {
+  "task": "create_label",
+  "version": "1.17.4",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.62,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.17.4",
+  "app": "gitea"
+ },
+ {
+  "task": "create_repo",
+  "version": "1.17.4",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.63,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.17.4",
+  "app": "gitea"
+ },
+ {
+  "task": "add_collaborator",
+  "version": "1.17.4",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.56,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.17.4",
+  "app": "gitea"
+ },
+ {
+  "task": "change_full_name",
+  "version": "1.17.4",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.6,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.17.4",
+  "app": "gitea"
+ },
+ {
+  "task": "create_branch",
+  "version": "1.17.4",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 10.13,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.17.4",
+  "app": "gitea"
+ },
+ {
+  "task": "delete_repo",
+  "version": "1.17.4",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 10.22,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.17.4",
+  "app": "gitea"
+ },
+ {
+  "task": "star_repo",
+  "version": "1.19.4",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 3.54,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.19.4",
+  "app": "gitea"
+ },
+ {
+  "task": "repo_description",
+  "version": "1.19.4",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 10.28,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.19.4",
+  "app": "gitea"
+ },
+ {
+  "task": "create_issue",
+  "version": "1.19.4",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.75,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.19.4",
+  "app": "gitea"
+ },
+ {
+  "task": "create_label",
+  "version": "1.19.4",
+  "agent": "selector_replay",
+  "success": false,
+  "halted": "selector_not_found",
+  "seconds": 10.25,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 3,
+    "ok": false,
+    "halted": "selector_not_found",
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.19.4",
+  "app": "gitea"
+ },
+ {
+  "task": "create_repo",
+  "version": "1.19.4",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.68,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.19.4",
+  "app": "gitea"
+ },
+ {
+  "task": "add_collaborator",
+  "version": "1.19.4",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.6,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.19.4",
+  "app": "gitea"
+ },
+ {
+  "task": "change_full_name",
+  "version": "1.19.4",
+  "agent": "selector_replay",
+  "success": false,
+  "halted": "selector_not_found",
+  "seconds": 6.99,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": false,
+    "halted": "selector_not_found",
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.19.4",
+  "app": "gitea"
+ },
+ {
+  "task": "create_branch",
+  "version": "1.19.4",
+  "agent": "selector_replay",
+  "success": false,
+  "halted": "selector_not_found",
+  "seconds": 0.12,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": false,
+    "halted": "selector_not_found",
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.19.4",
+  "app": "gitea"
+ },
+ {
+  "task": "delete_repo",
+  "version": "1.19.4",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 10.16,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.19.4",
+  "app": "gitea"
+ },
+ {
+  "task": "star_repo",
+  "version": "1.17.4",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 3.42,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.17.4",
+  "app": "gitea"
+ },
+ {
+  "task": "repo_description",
+  "version": "1.17.4",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 10.13,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.17.4",
+  "app": "gitea"
+ },
+ {
+  "task": "create_issue",
+  "version": "1.17.4",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 13.53,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.17.4",
+  "app": "gitea"
+ },
+ {
+  "task": "create_label",
+  "version": "1.17.4",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 13.44,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.17.4",
+  "app": "gitea"
+ },
+ {
+  "task": "create_repo",
+  "version": "1.17.4",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 13.41,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.17.4",
+  "app": "gitea"
+ },
+ {
+  "task": "add_collaborator",
+  "version": "1.17.4",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 13.46,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.17.4",
+  "app": "gitea"
+ },
+ {
+  "task": "change_full_name",
+  "version": "1.17.4",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 13.45,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.17.4",
+  "app": "gitea"
+ },
+ {
+  "task": "create_branch",
+  "version": "1.17.4",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 10.14,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.17.4",
+  "app": "gitea"
+ },
+ {
+  "task": "delete_repo",
+  "version": "1.17.4",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 10.09,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.17.4",
+  "app": "gitea"
+ },
+ {
+  "task": "star_repo",
+  "version": "1.19.4",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 3.47,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.9985714285714286,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.19.4",
+  "app": "gitea"
+ },
+ {
+  "task": "repo_description",
+  "version": "1.19.4",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 10.16,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.9982142857142857,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.9975,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 0.9985714285714286,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.19.4",
+  "app": "gitea"
+ },
+ {
+  "task": "create_issue",
+  "version": "1.19.4",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 13.62,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.9982142857142857,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.9982142857142857,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 0.9975,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "score": 0.9982142857142857,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.19.4",
+  "app": "gitea"
+ },
+ {
+  "task": "create_label",
+  "version": "1.19.4",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 13.57,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.9982142857142857,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.9982142857142857,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 0.75,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "score": 0.42857142857142855,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.19.4",
+  "app": "gitea"
+ },
+ {
+  "task": "create_repo",
+  "version": "1.19.4",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 13.51,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.997741230242737,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.997741230242737,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 0.9975,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "score": 0.9989285714285714,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.19.4",
+  "app": "gitea"
+ },
+ {
+  "task": "add_collaborator",
+  "version": "1.19.4",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 13.5,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.9982142857142857,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.9975,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 0.9985714285714286,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "score": 0.9985714285714286,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.19.4",
+  "app": "gitea"
+ },
+ {
+  "task": "change_full_name",
+  "version": "1.19.4",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 13.65,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.9984028085875002,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.9877733980224116,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 0.9975,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "score": 0.9992857142857143,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.19.4",
+  "app": "gitea"
+ },
+ {
+  "task": "create_branch",
+  "version": "1.19.4",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 10.26,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.7764011394211391,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.99875,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 0.9989285714285714,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.19.4",
+  "app": "gitea"
+ },
+ {
+  "task": "delete_repo",
+  "version": "1.19.4",
+  "agent": "similo_noattr",
+  "success": true,
+  "halted": null,
+  "seconds": 10.23,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.9417857142857143,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.17.4",
+  "pair": "1.17.4->1.19.4",
+  "app": "gitea"
+ }
+]

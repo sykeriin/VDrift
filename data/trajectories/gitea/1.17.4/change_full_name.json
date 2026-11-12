@@ -1,0 +1,244 @@
+{
+ "task": "change_full_name",
+ "version": "1.17.4",
+ "check_passed": true,
+ "steps": [
+  {
+   "idx": 0,
+   "intent": "open profile menu",
+   "action": "click",
+   "value": null,
+   "x": 1233.03125,
+   "y": 25.9921875,
+   "irreversible": false,
+   "anchor": {
+    "tag": "div",
+    "role": "menu",
+    "name": "Profile and Settings\u2026",
+    "text": "Profile and Settings\u2026",
+    "attrs": {
+     "class": "ui dropdown jump item tooltip"
+    },
+    "bbox": [
+     1198,
+     7,
+     70,
+     38
+    ],
+    "anc": [
+     "|||menu",
+     "|||menu"
+    ],
+    "i": 8,
+    "center": [
+     1233.0,
+     26.0
+    ],
+    "neighbours": [
+     "Create\u2026",
+     "Notifications",
+     "Organization",
+     "New Repository"
+    ]
+   },
+   "selector": {
+    "css": null,
+    "role": "menu",
+    "name": "Profile and Settings\u2026"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/",
+    "appeared": [
+     "help",
+     "profile",
+     "settings",
+     "sign out",
+     "site administration",
+     "starred"
+    ],
+    "disappeared": [
+     "archived private",
+     "collaborative",
+     "new repository",
+     "organization"
+    ]
+   }
+  },
+  {
+   "idx": 1,
+   "intent": "open user settings",
+   "action": "click",
+   "value": null,
+   "x": 1176.484375,
+   "y": 199.984375,
+   "irreversible": false,
+   "anchor": {
+    "tag": "a",
+    "role": "menuitem",
+    "name": "Settings",
+    "text": "Settings",
+    "attrs": {
+     "id": "_aria_auto_id_7",
+     "href": "/user/settings",
+     "class": " item"
+    },
+    "bbox": [
+     1086,
+     181,
+     181,
+     38
+    ],
+    "anc": [
+     "|||menu",
+     "menu|Profile and Settings\u2026||dropdown",
+     "|||menu",
+     "|||menu"
+    ],
+    "i": 11,
+    "center": [
+     1176.5,
+     200.0
+    ],
+    "neighbours": [
+     "Starred",
+     "Help",
+     "Profile",
+     "Site Administration"
+    ]
+   },
+   "selector": {
+    "css": "#_aria_auto_id_7",
+    "role": "menuitem",
+    "name": "Settings"
+   },
+   "effect": {
+    "url_changed": true,
+    "path": "/user/settings",
+    "appeared": [
+     "account",
+     "appearance",
+     "applications",
+     "avatar",
+     "biography",
+     "choose new avatar",
+     "delete current avatar",
+     "email address",
+     "full name",
+     "hide email address"
+    ],
+    "disappeared": [
+     "all 0",
+     "api",
+     "english",
+     "find a repository\u2026",
+     "forks",
+     "help",
+     "licenses",
+     "mirrors",
+     "repository",
+     "repository organization"
+    ]
+   }
+  },
+  {
+   "idx": 2,
+   "intent": "type full name",
+   "action": "type",
+   "value": "Durva Test",
+   "x": 640.0,
+   "y": 334.28125,
+   "irreversible": false,
+   "anchor": {
+    "tag": "input",
+    "role": "textbox",
+    "name": "Full Name",
+    "text": "",
+    "attrs": {
+     "id": "full_name",
+     "name": "full_name"
+    },
+    "bbox": [
+     91,
+     315,
+     1099,
+     38
+    ],
+    "anc": [
+     "||form|form"
+    ],
+    "i": 20,
+    "center": [
+     640.5,
+     334.0
+    ],
+    "neighbours": [
+     "Email Address",
+     "Username",
+     "Username",
+     "Biography"
+    ]
+   },
+   "selector": {
+    "css": "#full_name",
+    "role": "textbox",
+    "name": "Full Name"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/user/settings",
+    "appeared": [],
+    "disappeared": []
+   }
+  },
+  {
+   "idx": 3,
+   "intent": "update profile",
+   "action": "click",
+   "value": null,
+   "x": 159.734375,
+   "y": 880.25,
+   "irreversible": false,
+   "anchor": {
+    "tag": "button",
+    "role": "button",
+    "name": "Update Profile",
+    "text": "Update Profile",
+    "attrs": {
+     "class": "ui green button"
+    },
+    "bbox": [
+     91,
+     861,
+     138,
+     38
+    ],
+    "anc": [
+     "||form|form"
+    ],
+    "i": 33,
+    "center": [
+     160.0,
+     880.0
+    ],
+    "neighbours": [
+     "Hide the activity from the profile page",
+     "User visibility",
+     "Use Custom Avatar",
+     "Public"
+    ]
+   },
+   "selector": {
+    "css": null,
+    "role": "button",
+    "name": "Update Profile"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/user/settings",
+    "appeared": [],
+    "disappeared": []
+   }
+  }
+ ]
+}

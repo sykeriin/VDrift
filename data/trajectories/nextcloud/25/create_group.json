@@ -1,0 +1,154 @@
+{
+ "task": "create_group",
+ "version": "25",
+ "check_passed": true,
+ "steps": [
+  {
+   "idx": 0,
+   "intent": "add group",
+   "action": "click",
+   "value": null,
+   "x": 158.0,
+   "y": 140.0,
+   "irreversible": false,
+   "anchor": {
+    "tag": "a",
+    "role": "link",
+    "name": "Add group",
+    "text": "Add group",
+    "attrs": {
+     "href": "#",
+     "class": "app-navigation-entry-link"
+    },
+    "bbox": [
+     16,
+     118,
+     284,
+     44
+    ],
+    "anc": [
+     "|||nav",
+     "|||nav",
+     "|||nav",
+     "|||nav",
+     "navigation|||nav"
+    ],
+    "i": 17,
+    "center": [
+     158.0,
+     140.0
+    ],
+    "neighbours": [
+     "Active users",
+     "New user",
+     "Admins",
+     "Files"
+    ]
+   },
+   "selector": {
+    "css": "a[href=\"#\"]",
+    "role": "link",
+    "name": "Add group"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/index.php/settings/users",
+    "appeared": [
+     "cancel changes",
+     "confirm changes",
+     "enter group name",
+     "new user active users 1 admins 1 settings"
+    ],
+    "disappeared": [
+     "new user add group active users 1 admins 1 settings"
+    ]
+   }
+  },
+  {
+   "idx": 1,
+   "intent": "type group name",
+   "action": "type",
+   "value": "qa-team",
+   "x": 129.5,
+   "y": 141.0,
+   "irreversible": false,
+   "anchor": {
+    "tag": "input",
+    "role": "textbox",
+    "name": "Enter group name",
+    "text": "",
+    "attrs": {
+     "type": "text",
+     "placeholder": "Enter group name",
+     "class": "app-navigation-input-confirm__input focus-visible"
+    },
+    "bbox": [
+     52,
+     123,
+     155,
+     36
+    ],
+    "anc": [
+     "||form|",
+     "|||nav",
+     "|||nav",
+     "|||nav",
+     "|||nav",
+     "|||nav"
+    ],
+    "i": 18,
+    "center": [
+     129.5,
+     141.0
+    ],
+    "neighbours": [
+     "Add group",
+     "Active users",
+     "New user",
+     "Admins"
+    ]
+   },
+   "selector": {
+    "css": null,
+    "role": "textbox",
+    "name": "Enter group name"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/index.php/settings/users",
+    "appeared": [],
+    "disappeared": []
+   }
+  },
+  {
+   "idx": 2,
+   "intent": "confirm",
+   "action": "key",
+   "value": "Enter",
+   "x": null,
+   "y": null,
+   "irreversible": false,
+   "anchor": null,
+   "selector": null,
+   "effect": {
+    "url_changed": true,
+    "path": "/settings/users/qa-team",
+    "appeared": [
+     "actions",
+     "new user add group active users 1 admins 1 groups qa-team settings",
+     "qa-team",
+     "qa-team dashboard files photos activity"
+    ],
+    "disappeared": [
+     "active users dashboard files photos activity",
+     "cancel changes",
+     "confirm changes",
+     "edit user",
+     "enter group name",
+     "new user active users 1 admins 1 settings",
+     "toggle user actions menu"
+    ]
+   }
+  }
+ ]
+}

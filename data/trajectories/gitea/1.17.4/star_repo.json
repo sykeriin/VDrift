@@ -1,0 +1,65 @@
+{
+ "task": "star_repo",
+ "version": "1.17.4",
+ "check_passed": true,
+ "steps": [
+  {
+   "idx": 0,
+   "intent": "click Star",
+   "action": "click",
+   "value": null,
+   "x": 1019.1171875,
+   "y": 86.65625,
+   "irreversible": false,
+   "anchor": {
+    "tag": "button",
+    "role": "button",
+    "name": "Star",
+    "text": "Star",
+    "attrs": {
+     "type": "submit",
+     "class": "ui compact small basic button"
+    },
+    "bbox": [
+     982,
+     70,
+     75,
+     33
+    ],
+    "anc": [
+     "||form|",
+     "|||header",
+     "|||header"
+    ],
+    "i": 16,
+    "center": [
+     1019.5,
+     86.5
+    ],
+    "neighbours": [
+     "Star 0",
+     "0",
+     "1",
+     "Notifications"
+    ]
+   },
+   "selector": {
+    "css": null,
+    "role": "button",
+    "name": "Star"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/vdadmin/demo",
+    "appeared": [
+     "unstar",
+     "unstar 1"
+    ],
+    "disappeared": [
+     "star",
+     "star 0"
+    ]
+   }
+  }
+ ]
+}

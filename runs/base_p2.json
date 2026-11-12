@@ -1,0 +1,4850 @@
+[
+ {
+  "task": "star_repo",
+  "version": "1.19.4",
+  "agent": "coord_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 3.42,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "repo_description",
+  "version": "1.19.4",
+  "agent": "coord_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 10.06,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "create_issue",
+  "version": "1.19.4",
+  "agent": "coord_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.4,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "create_label",
+  "version": "1.19.4",
+  "agent": "coord_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.43,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "create_repo",
+  "version": "1.19.4",
+  "agent": "coord_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.4,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "add_collaborator",
+  "version": "1.19.4",
+  "agent": "coord_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.36,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "change_full_name",
+  "version": "1.19.4",
+  "agent": "coord_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.43,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "create_branch",
+  "version": "1.19.4",
+  "agent": "coord_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 10.01,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "delete_repo",
+  "version": "1.19.4",
+  "agent": "coord_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 10.01,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "star_repo",
+  "version": "1.21.11",
+  "agent": "coord_replay",
+  "success": false,
+  "halted": null,
+  "seconds": 3.4,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "repo_description",
+  "version": "1.21.11",
+  "agent": "coord_replay",
+  "success": false,
+  "halted": null,
+  "seconds": 10.1,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "create_issue",
+  "version": "1.21.11",
+  "agent": "coord_replay",
+  "success": false,
+  "halted": null,
+  "seconds": 13.46,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": true
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "create_label",
+  "version": "1.21.11",
+  "agent": "coord_replay",
+  "success": false,
+  "halted": null,
+  "seconds": 13.31,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "create_repo",
+  "version": "1.21.11",
+  "agent": "coord_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.36,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "add_collaborator",
+  "version": "1.21.11",
+  "agent": "coord_replay",
+  "success": false,
+  "halted": null,
+  "seconds": 13.36,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": true
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "change_full_name",
+  "version": "1.21.11",
+  "agent": "coord_replay",
+  "success": false,
+  "halted": null,
+  "seconds": 13.37,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": true
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "create_branch",
+  "version": "1.21.11",
+  "agent": "coord_replay",
+  "success": false,
+  "halted": null,
+  "seconds": 9.95,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "delete_repo",
+  "version": "1.21.11",
+  "agent": "coord_replay",
+  "success": false,
+  "halted": null,
+  "seconds": 10.04,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "star_repo",
+  "version": "1.19.4",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 3.49,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "repo_description",
+  "version": "1.19.4",
+  "agent": "selector_replay",
+  "success": false,
+  "halted": null,
+  "seconds": 10.27,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "create_issue",
+  "version": "1.19.4",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.61,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "create_label",
+  "version": "1.19.4",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.59,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "create_repo",
+  "version": "1.19.4",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.57,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "add_collaborator",
+  "version": "1.19.4",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.54,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "change_full_name",
+  "version": "1.19.4",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.54,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "create_branch",
+  "version": "1.19.4",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 10.17,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "delete_repo",
+  "version": "1.19.4",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 10.14,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "star_repo",
+  "version": "1.21.11",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 3.46,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "repo_description",
+  "version": "1.21.11",
+  "agent": "selector_replay",
+  "success": false,
+  "halted": null,
+  "seconds": 10.16,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "create_issue",
+  "version": "1.21.11",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.59,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "create_label",
+  "version": "1.21.11",
+  "agent": "selector_replay",
+  "success": false,
+  "halted": "selector_not_found",
+  "seconds": 3.49,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": false,
+    "halted": "selector_not_found",
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "create_repo",
+  "version": "1.21.11",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.54,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "add_collaborator",
+  "version": "1.21.11",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.61,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "change_full_name",
+  "version": "1.21.11",
+  "agent": "selector_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.65,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "create_branch",
+  "version": "1.21.11",
+  "agent": "selector_replay",
+  "success": false,
+  "halted": null,
+  "seconds": 10.17,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "delete_repo",
+  "version": "1.21.11",
+  "agent": "selector_replay",
+  "success": false,
+  "halted": "selector_not_found",
+  "seconds": 6.73,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "hit": false,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": false,
+    "halted": "selector_not_found",
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "star_repo",
+  "version": "1.19.4",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 3.45,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "repo_description",
+  "version": "1.19.4",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 10.23,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "create_issue",
+  "version": "1.19.4",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.54,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "create_label",
+  "version": "1.19.4",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.47,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "create_repo",
+  "version": "1.19.4",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.47,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "add_collaborator",
+  "version": "1.19.4",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.45,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "change_full_name",
+  "version": "1.19.4",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.46,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "create_branch",
+  "version": "1.19.4",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 10.17,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "delete_repo",
+  "version": "1.19.4",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 10.17,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "star_repo",
+  "version": "1.21.11",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 3.42,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.9887465711672474,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "repo_description",
+  "version": "1.21.11",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 10.12,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.9442095416665008,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.9630192195187824,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 0.8674156479215938,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "create_issue",
+  "version": "1.21.11",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.48,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.9896640871210463,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.9274404957876147,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 0.9812358271158098,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "score": 0.8493743543415991,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "create_label",
+  "version": "1.21.11",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.44,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.988615927466938,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.5457783296943008,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 0.9497500000000001,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "score": 0.561395145654396,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "create_repo",
+  "version": "1.21.11",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.42,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.5857226660822795,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.9989248576268935,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 0.99825,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "score": 0.93625,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "add_collaborator",
+  "version": "1.21.11",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.42,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.9197201112532529,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.9459994212993971,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 0.9331863599255361,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "score": 0.870190517709241,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "change_full_name",
+  "version": "1.21.11",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 13.47,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.6397438836625848,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.9981614946176809,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 0.9663610623681425,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "score": 0.869877859348805,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "create_branch",
+  "version": "1.21.11",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 10.09,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.9706108275955588,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.9848210265640953,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 0.9871304623237662,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "delete_repo",
+  "version": "1.21.11",
+  "agent": "similo_replay",
+  "success": true,
+  "halted": null,
+  "seconds": 10.08,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "score": 0.9693909480300353,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "score": 0.6997500000000001,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "score": 0.996875,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "star_repo",
+  "version": "1.19.4",
+  "agent": "reground",
+  "success": true,
+  "halted": null,
+  "seconds": 3.47,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "repo_description",
+  "version": "1.19.4",
+  "agent": "reground",
+  "success": true,
+  "halted": null,
+  "seconds": 10.19,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "create_issue",
+  "version": "1.19.4",
+  "agent": "reground",
+  "success": true,
+  "halted": null,
+  "seconds": 13.55,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "create_label",
+  "version": "1.19.4",
+  "agent": "reground",
+  "success": true,
+  "halted": null,
+  "seconds": 13.54,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "create_repo",
+  "version": "1.19.4",
+  "agent": "reground",
+  "success": true,
+  "halted": null,
+  "seconds": 13.49,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "add_collaborator",
+  "version": "1.19.4",
+  "agent": "reground",
+  "success": true,
+  "halted": null,
+  "seconds": 13.48,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "change_full_name",
+  "version": "1.19.4",
+  "agent": "reground",
+  "success": true,
+  "halted": null,
+  "seconds": 13.53,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "create_branch",
+  "version": "1.19.4",
+  "agent": "reground",
+  "success": true,
+  "halted": null,
+  "seconds": 10.17,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "delete_repo",
+  "version": "1.19.4",
+  "agent": "reground",
+  "success": true,
+  "halted": null,
+  "seconds": 10.16,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "star_repo",
+  "version": "1.21.11",
+  "agent": "reground",
+  "success": true,
+  "halted": null,
+  "seconds": 3.45,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.092,
+    "stale": true,
+    "score": 0.994,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "repo_description",
+  "version": "1.21.11",
+  "agent": "reground",
+  "success": false,
+  "halted": null,
+  "seconds": 10.18,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.96,
+    "stale": false,
+    "score": 0.96,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.616,
+    "stale": false,
+    "score": 0.616,
+    "hit": false,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.076,
+    "stale": true,
+    "score": 0.969,
+    "effect_ok": null,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "create_issue",
+  "version": "1.21.11",
+  "agent": "reground",
+  "success": true,
+  "halted": null,
+  "seconds": 13.55,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.994,
+    "stale": false,
+    "score": 0.994,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.267,
+    "stale": true,
+    "score": 0.876,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.286,
+    "stale": true,
+    "score": 0.765,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.0,
+    "stale": true,
+    "score": 0.772,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "create_label",
+  "version": "1.21.11",
+  "agent": "reground",
+  "success": true,
+  "halted": null,
+  "seconds": 13.49,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.133,
+    "stale": true,
+    "score": 0.993,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.267,
+    "stale": true,
+    "score": 0.881,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.888,
+    "stale": false,
+    "score": 0.888,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "create_repo",
+  "version": "1.21.11",
+  "agent": "reground",
+  "success": true,
+  "halted": null,
+  "seconds": 13.47,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.853,
+    "stale": false,
+    "score": 0.853,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.944,
+    "stale": false,
+    "score": 0.944,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.999,
+    "stale": false,
+    "score": 0.999,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.999,
+    "stale": false,
+    "score": 0.999,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "add_collaborator",
+  "version": "1.21.11",
+  "agent": "reground",
+  "success": true,
+  "halted": null,
+  "seconds": 13.46,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.05,
+    "stale": true,
+    "score": 0.718,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.231,
+    "stale": true,
+    "score": 0.84,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.48,
+    "stale": true,
+    "score": 0.831,
+    "effect_ok": null,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.442,
+    "stale": true,
+    "score": 0.824,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "change_full_name",
+  "version": "1.21.11",
+  "agent": "reground",
+  "success": true,
+  "halted": null,
+  "seconds": 13.5,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.849,
+    "stale": false,
+    "score": 0.849,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.971,
+    "stale": false,
+    "score": 0.971,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.433,
+    "stale": true,
+    "score": 0.981,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.28,
+    "stale": true,
+    "score": 0.887,
+    "effect_ok": null,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "create_branch",
+  "version": "1.21.11",
+  "agent": "reground",
+  "success": true,
+  "halted": null,
+  "seconds": 10.1,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.15,
+    "stale": true,
+    "score": 0.993,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.075,
+    "stale": true,
+    "score": 0.917,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.865,
+    "stale": false,
+    "score": 0.865,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "delete_repo",
+  "version": "1.21.11",
+  "agent": "reground",
+  "success": true,
+  "halted": null,
+  "seconds": 10.11,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.16,
+    "stale": true,
+    "score": 0.909,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.999,
+    "stale": false,
+    "score": 0.999,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "star_repo",
+  "version": "1.19.4",
+  "agent": "reground_noguard",
+  "success": true,
+  "halted": null,
+  "seconds": 3.48,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "repo_description",
+  "version": "1.19.4",
+  "agent": "reground_noguard",
+  "success": true,
+  "halted": null,
+  "seconds": 10.18,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "create_issue",
+  "version": "1.19.4",
+  "agent": "reground_noguard",
+  "success": true,
+  "halted": null,
+  "seconds": 13.59,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "create_label",
+  "version": "1.19.4",
+  "agent": "reground_noguard",
+  "success": true,
+  "halted": null,
+  "seconds": 13.52,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "create_repo",
+  "version": "1.19.4",
+  "agent": "reground_noguard",
+  "success": true,
+  "halted": null,
+  "seconds": 13.5,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "add_collaborator",
+  "version": "1.19.4",
+  "agent": "reground_noguard",
+  "success": true,
+  "halted": null,
+  "seconds": 13.49,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": null,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "change_full_name",
+  "version": "1.19.4",
+  "agent": "reground_noguard",
+  "success": true,
+  "halted": null,
+  "seconds": 13.57,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": null,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "create_branch",
+  "version": "1.19.4",
+  "agent": "reground_noguard",
+  "success": true,
+  "halted": null,
+  "seconds": 10.12,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "delete_repo",
+  "version": "1.19.4",
+  "agent": "reground_noguard",
+  "success": true,
+  "halted": null,
+  "seconds": 10.1,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "star_repo",
+  "version": "1.21.11",
+  "agent": "reground_noguard",
+  "success": true,
+  "halted": null,
+  "seconds": 3.46,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.092,
+    "stale": true,
+    "score": 0.994,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "repo_description",
+  "version": "1.21.11",
+  "agent": "reground_noguard",
+  "success": false,
+  "halted": null,
+  "seconds": 10.16,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.96,
+    "stale": false,
+    "score": 0.96,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.616,
+    "stale": false,
+    "score": 0.616,
+    "hit": false,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.076,
+    "stale": true,
+    "score": 0.969,
+    "effect_ok": null,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "create_issue",
+  "version": "1.21.11",
+  "agent": "reground_noguard",
+  "success": true,
+  "halted": null,
+  "seconds": 13.57,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.994,
+    "stale": false,
+    "score": 0.994,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.267,
+    "stale": true,
+    "score": 0.876,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.286,
+    "stale": true,
+    "score": 0.765,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.0,
+    "stale": true,
+    "score": 0.772,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "create_label",
+  "version": "1.21.11",
+  "agent": "reground_noguard",
+  "success": true,
+  "halted": null,
+  "seconds": 13.51,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.133,
+    "stale": true,
+    "score": 0.993,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.267,
+    "stale": true,
+    "score": 0.881,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.888,
+    "stale": false,
+    "score": 0.888,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "create_repo",
+  "version": "1.21.11",
+  "agent": "reground_noguard",
+  "success": true,
+  "halted": null,
+  "seconds": 13.46,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.853,
+    "stale": false,
+    "score": 0.853,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.944,
+    "stale": false,
+    "score": 0.944,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.999,
+    "stale": false,
+    "score": 0.999,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.999,
+    "stale": false,
+    "score": 0.999,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "add_collaborator",
+  "version": "1.21.11",
+  "agent": "reground_noguard",
+  "success": true,
+  "halted": null,
+  "seconds": 13.49,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.05,
+    "stale": true,
+    "score": 0.718,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.231,
+    "stale": true,
+    "score": 0.84,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.48,
+    "stale": true,
+    "score": 0.831,
+    "effect_ok": null,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.442,
+    "stale": true,
+    "score": 0.824,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "change_full_name",
+  "version": "1.21.11",
+  "agent": "reground_noguard",
+  "success": true,
+  "halted": null,
+  "seconds": 13.48,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.849,
+    "stale": false,
+    "score": 0.849,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.971,
+    "stale": false,
+    "score": 0.971,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.433,
+    "stale": true,
+    "score": 0.981,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.28,
+    "stale": true,
+    "score": 0.887,
+    "effect_ok": null,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "create_branch",
+  "version": "1.21.11",
+  "agent": "reground_noguard",
+  "success": true,
+  "halted": null,
+  "seconds": 10.08,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.15,
+    "stale": true,
+    "score": 0.993,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.075,
+    "stale": true,
+    "score": 0.917,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.865,
+    "stale": false,
+    "score": 0.865,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "delete_repo",
+  "version": "1.21.11",
+  "agent": "reground_noguard",
+  "success": true,
+  "halted": null,
+  "seconds": 10.12,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.16,
+    "stale": true,
+    "score": 0.909,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.999,
+    "stale": false,
+    "score": 0.999,
+    "effect_ok": true,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "star_repo",
+  "version": "1.19.4",
+  "agent": "reground_noverify",
+  "success": true,
+  "halted": null,
+  "seconds": 3.44,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "repo_description",
+  "version": "1.19.4",
+  "agent": "reground_noverify",
+  "success": true,
+  "halted": null,
+  "seconds": 10.18,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "create_issue",
+  "version": "1.19.4",
+  "agent": "reground_noverify",
+  "success": true,
+  "halted": null,
+  "seconds": 13.53,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "create_label",
+  "version": "1.19.4",
+  "agent": "reground_noverify",
+  "success": true,
+  "halted": null,
+  "seconds": 13.5,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "create_repo",
+  "version": "1.19.4",
+  "agent": "reground_noverify",
+  "success": true,
+  "halted": null,
+  "seconds": 13.49,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "add_collaborator",
+  "version": "1.19.4",
+  "agent": "reground_noverify",
+  "success": true,
+  "halted": null,
+  "seconds": 13.44,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "change_full_name",
+  "version": "1.19.4",
+  "agent": "reground_noverify",
+  "success": true,
+  "halted": null,
+  "seconds": 13.48,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "create_branch",
+  "version": "1.19.4",
+  "agent": "reground_noverify",
+  "success": true,
+  "halted": null,
+  "seconds": 10.09,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "delete_repo",
+  "version": "1.19.4",
+  "agent": "reground_noverify",
+  "success": true,
+  "halted": null,
+  "seconds": 10.08,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.19.4"
+ },
+ {
+  "task": "star_repo",
+  "version": "1.21.11",
+  "agent": "reground_noverify",
+  "success": true,
+  "halted": null,
+  "seconds": 3.41,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.092,
+    "stale": true,
+    "score": 0.994,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "repo_description",
+  "version": "1.21.11",
+  "agent": "reground_noverify",
+  "success": false,
+  "halted": null,
+  "seconds": 10.11,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.96,
+    "stale": false,
+    "score": 0.96,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.616,
+    "stale": false,
+    "score": 0.616,
+    "hit": false,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.076,
+    "stale": true,
+    "score": 0.969,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "create_issue",
+  "version": "1.21.11",
+  "agent": "reground_noverify",
+  "success": true,
+  "halted": null,
+  "seconds": 13.43,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.994,
+    "stale": false,
+    "score": 0.994,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.267,
+    "stale": true,
+    "score": 0.876,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.286,
+    "stale": true,
+    "score": 0.765,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.0,
+    "stale": true,
+    "score": 0.772,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "create_label",
+  "version": "1.21.11",
+  "agent": "reground_noverify",
+  "success": true,
+  "halted": null,
+  "seconds": 13.46,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.133,
+    "stale": true,
+    "score": 0.993,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.267,
+    "stale": true,
+    "score": 0.881,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.888,
+    "stale": false,
+    "score": 0.888,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "create_repo",
+  "version": "1.21.11",
+  "agent": "reground_noverify",
+  "success": true,
+  "halted": null,
+  "seconds": 13.4,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.853,
+    "stale": false,
+    "score": 0.853,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.944,
+    "stale": false,
+    "score": 0.944,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.999,
+    "stale": false,
+    "score": 0.999,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.999,
+    "stale": false,
+    "score": 0.999,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "add_collaborator",
+  "version": "1.21.11",
+  "agent": "reground_noverify",
+  "success": true,
+  "halted": null,
+  "seconds": 13.42,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.05,
+    "stale": true,
+    "score": 0.718,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.231,
+    "stale": true,
+    "score": 0.84,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.48,
+    "stale": true,
+    "score": 0.831,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.442,
+    "stale": true,
+    "score": 0.824,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "change_full_name",
+  "version": "1.21.11",
+  "agent": "reground_noverify",
+  "success": true,
+  "halted": null,
+  "seconds": 13.49,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.849,
+    "stale": false,
+    "score": 0.849,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.971,
+    "stale": false,
+    "score": 0.971,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.433,
+    "stale": true,
+    "score": 0.981,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 3,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.28,
+    "stale": true,
+    "score": 0.887,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "create_branch",
+  "version": "1.21.11",
+  "agent": "reground_noverify",
+  "success": true,
+  "halted": null,
+  "seconds": 10.08,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.15,
+    "stale": true,
+    "score": 0.993,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.075,
+    "stale": true,
+    "score": 0.917,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.865,
+    "stale": false,
+    "score": 0.865,
+    "hit": true,
+    "truly_stale": true
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ },
+ {
+  "task": "delete_repo",
+  "version": "1.21.11",
+  "agent": "reground_noverify",
+  "success": true,
+  "halted": null,
+  "seconds": 10.06,
+  "steps": [
+   {
+    "idx": 0,
+    "ok": true,
+    "halted": null,
+    "tier": "T0",
+    "tried": 1,
+    "score_at_coord": 0.16,
+    "stale": true,
+    "score": 0.909,
+    "hit": true,
+    "truly_stale": true
+   },
+   {
+    "idx": 1,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 1.0,
+    "stale": false,
+    "score": 1.0,
+    "hit": true,
+    "truly_stale": false
+   },
+   {
+    "idx": 2,
+    "ok": true,
+    "halted": null,
+    "tier": "cached",
+    "tried": 1,
+    "score_at_coord": 0.999,
+    "stale": false,
+    "score": 0.999,
+    "hit": true,
+    "truly_stale": false
+   }
+  ],
+  "source_version": "1.19.4",
+  "pair": "1.19.4->1.21.11"
+ }
+]

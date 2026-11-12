@@ -1,0 +1,195 @@
+{
+ "task": "create_folder",
+ "version": "24",
+ "check_passed": true,
+ "steps": [
+  {
+   "idx": 0,
+   "intent": "open new menu",
+   "action": "click",
+   "value": null,
+   "x": 384.0,
+   "y": 73.0,
+   "irreversible": false,
+   "anchor": {
+    "tag": "a",
+    "role": "link",
+    "name": "New",
+    "text": "New",
+    "attrs": {
+     "href": "#",
+     "class": "button new"
+    },
+    "bbox": [
+     366,
+     55,
+     36,
+     36
+    ],
+    "anc": [
+     "main|||"
+    ],
+    "i": 23,
+    "center": [
+     384.0,
+     73.0
+    ],
+    "neighbours": [
+     "Home",
+     "Activity",
+     "Photos",
+     "Readme.md Recently edited"
+    ]
+   },
+   "selector": {
+    "css": "a[href=\"#\"]",
+    "role": "link",
+    "name": "New"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/index.php/apps/files/",
+    "appeared": [
+     "new folder",
+     "new text file",
+     "upload file"
+    ],
+    "disappeared": []
+   }
+  },
+  {
+   "idx": 1,
+   "intent": "new folder",
+   "action": "click",
+   "value": null,
+   "x": 391.3046875,
+   "y": 164.0,
+   "irreversible": false,
+   "anchor": {
+    "tag": "a",
+    "role": "link",
+    "name": "New folder",
+    "text": "New folder",
+    "attrs": {
+     "href": "#",
+     "class": "menuitem"
+    },
+    "bbox": [
+     318,
+     142,
+     147,
+     44
+    ],
+    "anc": [
+     "|||menu",
+     "main|||"
+    ],
+    "i": 25,
+    "center": [
+     391.5,
+     164.0
+    ],
+    "neighbours": [
+     "Upload file",
+     "New text file",
+     "New",
+     "Readme.md Recently edited"
+    ]
+   },
+   "selector": {
+    "css": "a[href=\"#\"]",
+    "role": "link",
+    "name": "New folder"
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/index.php/apps/files/",
+    "appeared": [],
+    "disappeared": []
+   }
+  },
+  {
+   "idx": 2,
+   "intent": "type folder name",
+   "action": "type",
+   "value": "Projects",
+   "x": 427.0,
+   "y": 161.0,
+   "irreversible": false,
+   "anchor": {
+    "tag": "input",
+    "role": "textbox",
+    "name": "",
+    "text": "",
+    "attrs": {
+     "id": "view11-input-folder",
+     "type": "text",
+     "value": "New folder"
+    },
+    "bbox": [
+     362,
+     144,
+     130,
+     34
+    ],
+    "anc": [
+     "||form|form",
+     "|||menu",
+     "|||menu",
+     "main|||"
+    ],
+    "i": 26,
+    "center": [
+     427.0,
+     161.0
+    ],
+    "neighbours": [
+     "New folder",
+     "Upload file",
+     "New text file",
+     " "
+    ]
+   },
+   "selector": {
+    "css": "#view11-input-folder",
+    "role": "textbox",
+    "name": ""
+   },
+   "effect": {
+    "url_changed": false,
+    "path": "/index.php/apps/files/",
+    "appeared": [],
+    "disappeared": []
+   }
+  },
+  {
+   "idx": 3,
+   "intent": "confirm",
+   "action": "key",
+   "value": "Enter",
+   "x": null,
+   "y": null,
+   "irreversible": false,
+   "anchor": null,
+   "selector": null,
+   "effect": {
+    "url_changed": false,
+    "path": "/index.php/apps/files/",
+    "appeared": [
+     "avatar of {displayname}",
+     "comments",
+     "not favorited projects share actions",
+     "projects",
+     "sharing",
+     "you created projects seconds ago"
+    ],
+    "disappeared": [
+     "meeting notes.md recently edited",
+     "new folder",
+     "new text file",
+     "upload file"
+    ]
+   }
+  }
+ ]
+}
