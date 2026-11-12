@@ -2,7 +2,7 @@
 T1 (OCR+icon), T2 (grounding model), T3 (CUA escalation) are explicit stubs: they return no candidates and mark the step 'needs_model'."""
 from __future__ import annotations
 import re
-from ..agents.replay import Outcome, _do
+from ..agents.replay import Outcome, _do, offset_point
 from ..drivers.playwright_driver import element_at
 from . import similarity as sim, effect as fx
 
@@ -11,9 +11,9 @@ DESTRUCTIVE = re.compile(r"\b(delete|remove|archive|revoke|transfer|reset|drop|w
 class ReGround:
     name = "reground"
     def __init__(self, tau=0.60, tau_cand=0.45, tau_hi=0.85, k=3, use_ctx=True, use_pos=True,
-                 verify_effects=True, guard=True, containment=False, name=None):
+                 verify_effects=True, guard=True, containment=False, offset=False, name=None):
         self.tau, self.tau_cand, self.tau_hi, self.k = tau, tau_cand, tau_hi, k
-        self.use_ctx, self.use_pos, self.verify, self.guard, self.cont = use_ctx, use_pos, verify_effects, guard, containment
+        self.use_ctx, self.use_pos, self.verify, self.guard, self.cont, self.offset = use_ctx, use_pos, verify_effects, guard, containment, offset
         if name: self.name = name
 
     def _score(self, anchor, el): return sim.score(anchor, el, use_pos=self.use_pos, use_ctx=self.use_ctx, containment=self.cont)[0]
@@ -42,7 +42,9 @@ class ReGround:
             info["tried"] += 1; info["score"] = round(score, 3)
             if self.guard and irreversible and (score < self.tau_hi or sim.name_sim(a["name"], el["name"], self.cont) < 0.8):
                 return Outcome(False, halted="needs_confirmation", info=info)
-            x, y = el["center"]; before = els
+            if self.offset: x, y = (step["x"], step["y"]) if info["tier"] == "cached" else offset_point(step, el)
+            else: x, y = el["center"]
+            before = els
             _do(drv, step, x, y)
             if not self.verify or step["action"] == "type": return Outcome(True, x, y, info=info)
             obs = fx.capture(url0, drv.url, before, drv.snapshot())

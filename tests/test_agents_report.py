@@ -25,3 +25,11 @@ def test_paired_bootstrap_only_uses_units_with_both_agents():
             {"pair": "p", "task": "t2", "agent": "a", "success": True}]   # t2 has no b: must be ignored
     mean, lo, hi, n = report.paired_bootstrap(rows, "a", "b", iters=200)
     assert n == 1 and mean == 1.0
+
+def test_offset_point_preserves_relative_click_position():
+    from versiondrift.agents.replay import offset_point
+    step = {"x": 110.0, "y": 30.0, "anchor": {"bbox": [100, 20, 100, 20]}}      # click at (10%, 50%) of the anchor
+    el = {"bbox": [400, 300, 200, 40]}
+    assert offset_point(step, el) == (420.0, 320.0)
+    step0 = {"x": 5.0, "y": 5.0, "anchor": {"bbox": [100, 20, 100, 20]}}        # outside the bbox: clamped, not extrapolated
+    assert offset_point(step0, el) == (400.0, 300.0)

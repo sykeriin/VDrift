@@ -52,3 +52,24 @@ def test_reset_is_deterministic():
             sigs.append(sorted(r["name"] for r in env.api("GET", "/repos/search").json()["data"]))
         assert sigs[0] == sigs[1] == ["demo"]
     finally: env.stop()
+
+def _docker_ok():
+    import subprocess
+    return subprocess.run(["docker", "info"], capture_output=True).returncode == 0
+
+@pytest.mark.skipif(not _docker_ok(), reason="docker daemon not running (start dockerd)")
+def test_noop_fails_every_checker_nextcloud():
+    Env, TASKS = apps.get("nextcloud"); env = Env("24", slot=9)
+    try:
+        if not env.snapshot.exists(): env.init()
+        for t in TASKS:
+            env.reset(); t.setup(env)
+            assert not t.check(env), f"{t.id} passes with no actions on nextcloud 24"
+    finally: env.stop()
+
+def test_nextcloud_reference_trajectories_recorded_and_passing():
+    for v in ("24", "25"):
+        _, TASKS = apps.get("nextcloud")
+        for t in TASKS:
+            traj = tj.load(t.id, v, "nextcloud")
+            assert traj["check_passed"], f"{t.id}@{v}"

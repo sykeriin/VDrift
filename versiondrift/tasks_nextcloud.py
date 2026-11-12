@@ -14,7 +14,9 @@ def _fav(env):
 
 def _user(env): return env.ocs("GET", "/cloud/users/carol").status_code == 200
 def _group(env): return any(g == "qa-team" for g in env.ocs("GET", "/cloud/groups").json()["ocs"]["data"]["groups"])
-def _dispname(env): return env.ocs("GET", "/cloud/user").json()["ocs"]["data"]["displayname"] == "Durva Test"
+def _dispname(env):
+    d = env.ocs("GET", "/cloud/user").json()["ocs"]["data"]
+    return (d.get("display-name") or d.get("displayname")) == "Durva Test"
 def _seed_notes(env): env.put_file("notes.txt")
 
 def row_action(intent, menu_text, irreversible=False):
@@ -42,12 +44,13 @@ TASKS = [
          [Step("new user", "click", T("button, a, #new-user-button", "New user")),
           Step("type user name", "type", T("input[name=username]:visible, input[placeholder*=sername]:visible"), "carol"),
           Step("type password", "type", T("input[type=password]:visible"), "Carol-pass-123!"),
-          Step("add user", "click", T("button, input[type=submit]", "Add new user"))], _user),
+          Step("add user", "click", T("form input[type=submit]:visible, form button[type=submit]:visible"))], _user),
     Task("create_group", "Create a group named 'qa-team'.", "/index.php/settings/users",
          [Step("add group", "click", T("#new-group-button, a, button, li", "Add group")),
           Step("type group name", "type", T("input[type=text]:visible#new-group-name, input.new-group-name, #newgroup-entry input:visible, input[placeholder*=roup]:visible"), "qa-team"),
           Step("confirm", "key", None, "Enter")], _group),
     Task("change_display_name", "Change your full name to 'Durva Test'.", "/index.php/settings/user",
-         [Step("type full name", "type", T("input#displayname, input[name=displayname]"), "Durva Test"),
+         [Step("type full name", "type", T("input#displayname, input[name=displayname]"), "Durva Test",
+               by_version={"25": T("input#account-property-displayname")}),
           Step("confirm", "key", None, "Enter")], _dispname),
 ]

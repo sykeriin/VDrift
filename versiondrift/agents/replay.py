@@ -18,6 +18,13 @@ def _do(drv, step, x, y):
     elif step["action"] == "click": drv.click(x, y)
     else: drv.type_at(x, y, step["value"])
 
+def offset_point(step, el):
+    """Where to click inside a (re-)located element: the same relative position the original click had inside its anchor element."""
+    ax, ay, aw, ah = step["anchor"]["bbox"]; bx, by, bw, bh = el["bbox"]
+    rx = min(max((step["x"] - ax) / aw, 0.0), 1.0) if aw else 0.5
+    ry = min(max((step["y"] - ay) / ah, 0.0), 1.0) if ah else 0.5
+    return bx + rx * bw, by + ry * bh
+
 def _key(drv, step):
     drv.press(step["value"]); return Outcome(True)
 
@@ -96,8 +103,8 @@ def similo_score(a, e, use_attrs=True):
 class SimiloReplay:
     """Similo (Nass et al.) style locator: always re-locate the best-matching element, act without verification."""
     name = "similo_replay"
-    def __init__(self, use_attrs=True, name=None):
-        self.use_attrs = use_attrs
+    def __init__(self, use_attrs=True, name=None, offset=False):
+        self.use_attrs, self.offset = use_attrs, offset
         if name: self.name = name
     def step(self, drv, step):
         if step["action"] == "key": return _key(drv, step)
@@ -105,4 +112,5 @@ class SimiloReplay:
         if not els: return Outcome(False, halted="empty_page")
         sc = sorted(((similo_score(step["anchor"], e, self.use_attrs), e) for e in els), key=lambda t: -t[0])
         best, e = sc[0]
-        x, y = e["center"]; _do(drv, step, x, y); return Outcome(True, x, y, info={"score": best})
+        x, y = offset_point(step, e) if self.offset else e["center"]
+        _do(drv, step, x, y); return Outcome(True, x, y, info={"score": best})

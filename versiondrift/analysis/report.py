@@ -6,7 +6,9 @@ from ..harness import trajectory as tj
 from .labels import label_task
 from .metrics import mcnemar_exact, staleness_pr, tier_use, halts
 
-PAIRS = [("1.17.4", "1.19.4"), ("1.19.4", "1.21.11"), ("1.21.11", "1.22.3"), ("1.17.4", "1.22.3")]
+from .. import apps as _apps
+PAIRS = _apps.PAIRS["gitea"]   # rebound per app in main()
+APP = "gitea"
 
 def load_all(paths):
     """Later files override earlier ones for the same (agent, pair, task, run-version): lets re-runs replace stale results."""
@@ -41,14 +43,16 @@ def wrong_destructive(rows):
     """Executed irreversible steps (click landed off the true target) per agent: the safety metric."""
     c = defaultdict(int)
     for r in rows:
-        traj = tj.load(r["task"], r["source_version"])
+        traj = tj.load(r["task"], r["source_version"], APP)
         for s in r["steps"]:
             if traj["steps"][s["idx"]].get("irreversible") and s.get("hit") is False and s.get("ok") is not False: c[r["agent"]] += 1
             elif traj["steps"][s["idx"]].get("irreversible") and s.get("hit") is False: c[r["agent"]] += 1
     return dict(c)
 
-def main(paths):
-    res = load_all(paths); drift = [r for r in res if is_drift(r)]; same = [r for r in res if not is_drift(r)]
+def main(paths, app="gitea"):
+    global PAIRS, APP
+    PAIRS, APP = _apps.PAIRS[app], app
+    res = [r for r in load_all(paths) if r.get("app", "gitea") == app]; drift = [r for r in res if is_drift(r)]; same = [r for r in res if not is_drift(r)]
     agents = sorted({r["agent"] for r in res})
     print("== same-version sanity (trajectory replayed on its own version; baseline must be ~100%) ==")
     t = table(res, same)
@@ -65,8 +69,7 @@ def main(paths):
         print(f"  {a:20}" + "".join(f"{c:13}" for c in cells) + f"  {K}/{N}")
     labels = {}
     for p in PAIRS:
-        from ..tasks_gitea import TASKS
-        for tk in TASKS: labels[(f"{p[0]}->{p[1]}", tk.id)] = label_task(tj.load(tk.id, p[0]), tj.load(tk.id, p[1]))["label"]
+        for tk in _apps.get(app)[1]: labels[(f"{p[0]}->{p[1]}", tk.id)] = label_task(tj.load(tk.id, p[0], app), tj.load(tk.id, p[1], app))["label"]
     print("\n== pooled success by task change type (worst step in task) ==")
     for lab in ["cosmetic", "relocation", "rename", "workflow_restructure"]:
         rows = [r for r in drift if labels.get((r["pair"], r["task"])) == lab]
@@ -74,7 +77,7 @@ def main(paths):
         tt = table(res, rows)
         print(f"  {lab:22}" + "  ".join(f"{a}:{tt[a][0]}/{tt[a][1]}" for a in agents if a in tt))
     print("\n== paired comparisons on pooled (pair,task) units: diff = first - second, 95% bootstrap CI, exact McNemar p ==")
-    for a, b in [("reground", "similo_replay"), ("reground", "coord_replay"), ("reground", "selector_replay"), ("similo_replay", "coord_replay"),
+    for a, b in [("reground", "similo_replay"), ("reground", "similo_noattr"), ("reground_noguard", "similo_replay"), ("reground", "coord_replay"), ("reground", "selector_replay"), ("similo_replay", "coord_replay"),
                  ("reground", "reground_noguard"), ("reground", "reground_noverify"), ("reground", "reground_noctx")]:
         if a in agents and b in agents:
             ci = paired_bootstrap(drift, a, b)
@@ -91,4 +94,7 @@ def main(paths):
             print(f"  {a:20} tiers={tier_use(drift, a)} halts={halts(drift, a)} staleness={ {k: (round(v, 3) if isinstance(v, float) else v) for k, v in staleness_pr(drift, a).items()} }")
     print("\n== wrong irreversible clicks (executed off-target) ==", wrong_destructive(drift))
 
-if __name__ == "__main__": main(sys.argv[1:])
+if __name__ == "__main__":
+    a = sys.argv[1:]; app = "gitea"
+    if a and a[0] == "--app": app = a[1]; a = a[2:]
+    main(a, app)

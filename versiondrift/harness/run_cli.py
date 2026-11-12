@@ -14,6 +14,11 @@ AGENTS = {"coord": CoordReplay, "selector": SelectorReplay, "similo": SimiloRepl
           "reground_cont": lambda: ReGround(name="reground_cont", containment=True),
           "reground_cont_t50": lambda: ReGround(name="reground_cont_t50", containment=True, tau=0.50),
           "reground_cont_t70": lambda: ReGround(name="reground_cont_t70", containment=True, tau=0.70),
+          "reground_off": lambda: ReGround(name="reground_off", offset=True),
+          "reground_noguard_off": lambda: ReGround(name="reground_noguard_off", offset=True, guard=False),
+          "reground_cont_off": lambda: ReGround(name="reground_cont_off", offset=True, containment=True),
+          "similo_off": lambda: SimiloReplay(name="similo_off", offset=True),
+          "similo_noattr_off": lambda: SimiloReplay(use_attrs=False, name="similo_noattr_off", offset=True),
           "reground_noctx": lambda: ReGround(name="reground_noctx", use_ctx=False)}
 
 def main(vA, vB, agents, out, slot=0, aa=False, app="gitea"):

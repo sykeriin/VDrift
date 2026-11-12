@@ -276,3 +276,38 @@ Stop point for this session: that first table, honestly reported (including fail
 - `python -m versiondrift.harness.cli run --app gitea --pair A,B --agent coord_replay` and `--agent reground_replay` both produce `runs/<id>/results.json`; checkers verified by running the human reference trajectory on each version (must pass 100%) and a no-op trajectory (must fail 100%).
 - Manually inspect 3 re-grounded steps' before/after screenshots to confirm the right element was clicked.
 - Re-run with a fresh DB reset to confirm determinism.
+
+---
+
+## 12. Next step: publish to https://github.com/sykeriin/VDrift  (added 2026-11-03)
+
+Local repo `/home/user/versiondrift` has 3 commits on the default branch; `GH_TOKEN` in this container was invalid.
+1. Attach the repo with `add_repo(owner=sykeriin, repo=VDrift, access=push)`; this is the supported way to get push credentials. Do not pre-check with curl/gh.
+2. If attach succeeds: `git remote add origin <url>`; create branch `claude/initial-versiondrift` (do not push straight to the default branch); `git push -u origin claude/initial-versiondrift` (retry up to 4x with backoff on network errors only).
+3. If access is denied: relay the tool's exact reason; user fixes it via claude.ai Settings -> Connectors / GitHub app install. No retry.
+4. Verify with `git ls-remote origin`. No PR unless asked.
+Note: repo name differs from the package/dir name (`versiondrift`); keep the package name, no renames.
+
+---
+
+## 13. Build iteration 2 (2026-11-03). Rule from user: keep building what is required, TEST AT THE END, always.
+
+Code lives in `/home/user/versiondrift` (branch `claude/initial-versiondrift`, remote `origin` = sykeriin/VDrift; user asked for pushes to `main`). `/home/user/vdrift` is an empty clone, ignore it.
+
+Work order (each step committed; push to `main` at the end after tests pass):
+1. **Fix selector baseline** (`agents/replay.py`): it fails 5/9 on the SAME version, so it is invalid. Diagnose per failing step (dropdown items, modal buttons, suggestion links), fix until A->A = 9/9. Until then it is excluded from any claim.
+2. **More real drift, same app**: download Gitea 1.19.4 and 1.21.x (add to `PORTS`, `BIN_DIR`), record trajectories on each, run all consecutive pairs (1.17.4->1.19.4, 1.19.4->1.21.x, 1.21.x->1.22.3) plus the long jump. Gives drift of different sizes without a new app.
+3. **Held-out discipline**: tune ReGround thresholds (tau, tau_cand, tau_hi) on ONE pair only, report on the others. Principled fix for the observed miss ("Branch: main" -> "main": token containment in `name_sim`), reported as a post-hoc change with before/after numbers.
+4. **Change-type labels**: auto-label each (task, step, pair) from demo anchors (same name+place = cosmetic; same name, moved = relocation; renamed = rename); report drift gap and success by type. `workflow_restructure`/`feature_removed` tasks are still missing: add 2-3 if a pair really has one, otherwise state that none were found.
+5. **Docker feasibility check** (time-boxed): try starting `dockerd` here. If it works, add Nextcloud (2 versions) as app #2; if not, record that and try a second no-Docker app instead. No claims about app #2 until it runs.
+6. Metrics additions: bootstrap CIs, per-pair tables, wrong-destructive-click count, ReGround tier/cost counts.
+7. Update README honestly (what improved, what did not).
+
+**Testing at the end (mandatory, report failures as-is):**
+- `pytest tests` (add tests: selector fallback, no-op trajectory must FAIL every checker, reference trajectories must PASS on every version, label logic).
+- Re-record all reference trajectories; every task must pass on every version.
+- Full condition run; selector A->A must be 9/9 or the baseline stays marked invalid.
+- Determinism: re-run one condition twice, results must match.
+- Then `git push origin HEAD:main`.
+
+Still blocked / not doable here: GPU and API key (model agents, T2/T3), `gh` auth (default branch must be changed by the user in GitHub settings).
