@@ -5,7 +5,8 @@ from pathlib import Path
 from ..drivers.playwright_driver import element_at
 from ..reground import effect as fx
 
-TRAJ_DIR = Path("/home/user/versiondrift/data/trajectories")
+from ..envs.gitea import DATA_DIR
+TRAJ_DIR = DATA_DIR / "trajectories"
 
 def resolve(page, tgt):
     if "label" in tgt: loc = page.get_by_label(tgt["label"])

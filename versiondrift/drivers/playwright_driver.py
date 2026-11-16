@@ -1,6 +1,6 @@
 """Playwright driver: pixel-level actions + an accessibility-style snapshot of interactive elements."""
 from __future__ import annotations
-import re
+import os, re
 from playwright.sync_api import sync_playwright, Page
 
 SNAPSHOT_JS = r"""
@@ -51,8 +51,9 @@ class Driver:
     def __init__(self, headless=True, viewport=(1280, 1200)):
         self.viewport = {"width": viewport[0], "height": viewport[1]}
         self._pw = sync_playwright().start()
-        self.browser = self._pw.chromium.launch(executable_path="/opt/pw-browsers/chromium",
-                                                args=["--no-sandbox"], headless=headless)
+        exe = os.environ.get("VD_CHROMIUM", "/opt/pw-browsers/chromium")
+        kw = {"executable_path": exe} if os.path.exists(exe) else {}
+        self.browser = self._pw.chromium.launch(args=["--no-sandbox"], headless=headless, **kw)
         self.ctx = None; self.page: Page | None = None
 
     def new_session(self, viewport=None):

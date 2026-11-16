@@ -55,7 +55,8 @@ def test_reset_is_deterministic():
 
 def _docker_ok():
     import subprocess
-    return subprocess.run(["docker", "info"], capture_output=True).returncode == 0
+    try: return subprocess.run(["docker", "info"], capture_output=True).returncode == 0
+    except FileNotFoundError: return False   # docker not installed
 
 @pytest.mark.skipif(not _docker_ok(), reason="docker daemon not running (start dockerd)")
 def test_noop_fails_every_checker_nextcloud():
